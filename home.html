@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<!-- This website/webapp was created in Softr. https://www.softr.io -->
+<!-- Last Published: Thu, November 16 2023 23:21:37 -->
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi, shrink-to-fit=no"/>
+    <script>
+        const reactDefaultThemes = {defaultBaseTextSize: '16px',defaultBodyFont: 'Inter',defaultBodyFontWeight: '300',defaultBodyTextColor: '#383B3D',defaultButtonBackgroundColor: '#212121',defaultButtonRoundness: '.5rem',defaultButtonTextColor: '#ffffff',defaultContainerStyle: 'container',defaultTitleFont: 'Inter',defaultTitleFontWeight: '600',defaultTitleTextColor: '#383B3D'};
+    </script>
+        <script>/*! For license information please see softr-block-wrapper.min.js.LICENSE.txt */
+(()=>{"use strict";var __webpack_modules__={263:(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.d(__webpack_exports__,{Z:()=>__WEBPACK_DEFAULT_EXPORT__});var _utils__WEBPACK_IMPORTED_MODULE_0__=__webpack_require__(728);function _typeof(t){return _typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},_typeof(t)}function _slicedToArray(t,e){return _arrayWithHoles(t)||_iterableToArrayLimit(t,e)||_unsupportedIterableToArray(t,e)||_nonIterableRest()}function _nonIterableRest(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}function _iterableToArrayLimit(t,e){var r=null==t?null:"undefined"!=typeof Symbol&&t[Symbol.iterator]||t["@@iterator"];if(null!=r){var n,o,i=[],a=!0,c=!1;try{for(r=r.call(t);!(a=(n=r.next()).done)&&(i.push(n.value),!e||i.length!==e);a=!0);}catch(t){c=!0,o=t}finally{try{a||null==r.return||r.return()}finally{if(c)throw o}}return i}}function _arrayWithHoles(t){if(Array.isArray(t))return t}function _toConsumableArray(t){return _arrayWithoutHoles(t)||_iterableToArray(t)||_unsupportedIterableToArray(t)||_nonIterableSpread()}function _nonIterableSpread(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}function _unsupportedIterableToArray(t,e){if(t){if("string"==typeof t)return _arrayLikeToArray(t,e);var r=Object.prototype.toString.call(t).slice(8,-1);return"Object"===r&&t.constructor&&(r=t.constructor.name),"Map"===r||"Set"===r?Array.from(t):"Arguments"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?_arrayLikeToArray(t,e):void 0}}function _iterableToArray(t){if("undefined"!=typeof Symbol&&null!=t[Symbol.iterator]||null!=t["@@iterator"])return Array.from(t)}function _arrayWithoutHoles(t){if(Array.isArray(t))return _arrayLikeToArray(t)}function _arrayLikeToArray(t,e){(null==e||e>t.length)&&(e=t.length);for(var r=0,n=new Array(e);r<e;r++)n[r]=t[r];return n}function _regeneratorRuntime(){_regeneratorRuntime=function(){return t};var t={},e=Object.prototype,r=e.hasOwnProperty,n="function"==typeof Symbol?Symbol:{},o=n.iterator||"@@iterator",i=n.asyncIterator||"@@asyncIterator",a=n.toStringTag||"@@toStringTag";function c(t,e,r){return Object.defineProperty(t,e,{value:r,enumerable:!0,configurable:!0,writable:!0}),t[e]}try{c({},"")}catch(t){c=function(t,e,r){return t[e]=r}}function u(t,e,r,n){var o=e&&e.prototype instanceof f?e:f,i=Object.create(o.prototype),a=new O(n||[]);return i._invoke=function(t,e,r){var n="suspendedStart";return function(o,i){if("executing"===n)throw new Error("Generator is already running");if("completed"===n){if("throw"===o)throw i;return{value:void 0,done:!0}}for(r.method=o,r.arg=i;;){var a=r.delegate;if(a){var c=b(a,r);if(c){if(c===l)continue;return c}}if("next"===r.method)r.sent=r._sent=r.arg;else if("throw"===r.method){if("suspendedStart"===n)throw n="completed",r.arg;r.dispatchException(r.arg)}else"return"===r.method&&r.abrupt("return",r.arg);n="executing";var u=s(t,e,r);if("normal"===u.type){if(n=r.done?"completed":"suspendedYield",u.arg===l)continue;return{value:u.arg,done:r.done}}"throw"===u.type&&(n="completed",r.method="throw",r.arg=u.arg)}}}(t,r,a),i}function s(t,e,r){try{return{type:"normal",arg:t.call(e,r)}}catch(t){return{type:"throw",arg:t}}}t.wrap=u;var l={};function f(){}function p(){}function h(){}var y={};c(y,o,(function(){return this}));var d=Object.getPrototypeOf,v=d&&d(d(E([])));v&&v!==e&&r.call(v,o)&&(y=v);var m=h.prototype=f.prototype=Object.create(y);function g(t){["next","throw","return"].forEach((function(e){c(t,e,(function(t){return this._invoke(e,t)}))}))}function w(t,e){function n(o,i,a,c){var u=s(t[o],t,i);if("throw"!==u.type){var l=u.arg,f=l.value;return f&&"object"==_typeof(f)&&r.call(f,"__await")?e.resolve(f.__await).then((function(t){n("next",t,a,c)}),(function(t){n("throw",t,a,c)})):e.resolve(f).then((function(t){l.value=t,a(l)}),(function(t){return n("throw",t,a,c)}))}c(u.arg)}var o;this._invoke=function(t,r){function i(){return new e((function(e,o){n(t,r,e,o)}))}return o=o?o.then(i,i):i()}}function b(t,e){var r=t.iterator[e.method];if(void 0===r){if(e.delegate=null,"throw"===e.method){if(t.iterator.return&&(e.method="return",e.arg=void 0,b(t,e),"throw"===e.method))return l;e.method="throw",e.arg=new TypeError("The iterator does not provide a 'throw' method")}return l}var n=s(r,t.iterator,e.arg);if("throw"===n.type)return e.method="throw",e.arg=n.arg,e.delegate=null,l;var o=n.arg;return o?o.done?(e[t.resultName]=o.value,e.next=t.nextLoc,"return"!==e.method&&(e.method="next",e.arg=void 0),e.delegate=null,l):o:(e.method="throw",e.arg=new TypeError("iterator result is not an object"),e.delegate=null,l)}function _(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function x(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function O(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(_,this),this.reset(!0)}function E(t){if(t){var e=t[o];if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var n=-1,i=function e(){for(;++n<t.length;)if(r.call(t,n))return e.value=t[n],e.done=!1,e;return e.value=void 0,e.done=!0,e};return i.next=i}}return{next:L}}function L(){return{value:void 0,done:!0}}return p.prototype=h,c(m,"constructor",h),c(h,"constructor",p),p.displayName=c(h,a,"GeneratorFunction"),t.isGeneratorFunction=function(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===p||"GeneratorFunction"===(e.displayName||e.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,h):(t.__proto__=h,c(t,a,"GeneratorFunction")),t.prototype=Object.create(m),t},t.awrap=function(t){return{__await:t}},g(w.prototype),c(w.prototype,i,(function(){return this})),t.AsyncIterator=w,t.async=function(e,r,n,o,i){void 0===i&&(i=Promise);var a=new w(u(e,r,n,o),i);return t.isGeneratorFunction(r)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},g(m),c(m,a,"Generator"),c(m,o,(function(){return this})),c(m,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var e=[];for(var r in t)e.push(r);return e.reverse(),function r(){for(;e.length;){var n=e.pop();if(n in t)return r.value=n,r.done=!1,r}return r.done=!0,r}},t.values=E,O.prototype={constructor:O,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(x),!t)for(var e in this)"t"===e.charAt(0)&&r.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var e=this;function n(r,n){return a.type="throw",a.arg=t,e.next=r,n&&(e.method="next",e.arg=void 0),!!n}for(var o=this.tryEntries.length-1;o>=0;--o){var i=this.tryEntries[o],a=i.completion;if("root"===i.tryLoc)return n("end");if(i.tryLoc<=this.prev){var c=r.call(i,"catchLoc"),u=r.call(i,"finallyLoc");if(c&&u){if(this.prev<i.catchLoc)return n(i.catchLoc,!0);if(this.prev<i.finallyLoc)return n(i.finallyLoc)}else if(c){if(this.prev<i.catchLoc)return n(i.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return n(i.finallyLoc)}}}},abrupt:function(t,e){for(var n=this.tryEntries.length-1;n>=0;--n){var o=this.tryEntries[n];if(o.tryLoc<=this.prev&&r.call(o,"finallyLoc")&&this.prev<o.finallyLoc){var i=o;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=e&&e<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=t,a.arg=e,i?(this.method="next",this.next=i.finallyLoc,l):this.complete(a)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),l},finish:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var r=this.tryEntries[e];if(r.finallyLoc===t)return this.complete(r.completion,r.afterLoc),x(r),l}},catch:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var r=this.tryEntries[e];if(r.tryLoc===t){var n=r.completion;if("throw"===n.type){var o=n.arg;x(r)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,e,r){return this.delegate={iterator:E(t),resultName:e,nextLoc:r},"next"===this.method&&(this.arg=void 0),l}},t}function ownKeys(t,e){var r=Object.keys(t);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(t);e&&(n=n.filter((function(e){return Object.getOwnPropertyDescriptor(t,e).enumerable}))),r.push.apply(r,n)}return r}function _objectSpread(t){for(var e=1;e<arguments.length;e++){var r=null!=arguments[e]?arguments[e]:{};e%2?ownKeys(Object(r),!0).forEach((function(e){_defineProperty(t,e,r[e])})):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(r)):ownKeys(Object(r)).forEach((function(e){Object.defineProperty(t,e,Object.getOwnPropertyDescriptor(r,e))}))}return t}function asyncGeneratorStep(t,e,r,n,o,i,a){try{var c=t[i](a),u=c.value}catch(t){return void r(t)}c.done?e(u):Promise.resolve(u).then(n,o)}function _asyncToGenerator(t){return function(){var e=this,r=arguments;return new Promise((function(n,o){var i=t.apply(e,r);function a(t){asyncGeneratorStep(i,n,o,a,c,"next",t)}function c(t){asyncGeneratorStep(i,n,o,a,c,"throw",t)}a(void 0)}))}}function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function _defineProperties(t,e){for(var r=0;r<e.length;r++){var n=e[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(t,n.key,n)}}function _createClass(t,e,r){return e&&_defineProperties(t.prototype,e),r&&_defineProperties(t,r),Object.defineProperty(t,"prototype",{writable:!1}),t}function _defineProperty(t,e,r){return e in t?Object.defineProperty(t,e,{value:r,enumerable:!0,configurable:!0,writable:!0}):t[e]=r,t}var Script=function(){function Script(){_classCallCheck(this,Script)}var _loadTypeVarDebug,_load;return _createClass(Script,null,[{key:"load",value:(_load=_asyncToGenerator(_regeneratorRuntime().mark((function t(e,r){var n,o;return _regeneratorRuntime().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:if(n=(0,_utils__WEBPACK_IMPORTED_MODULE_0__.un)(e),o=_objectSpread(_objectSpread({},this.defaultOptions),r),this.scripts[n]){t.next=13;break}t.t0=e.type,t.next="var"===t.t0?6:"umd"===t.t0?8:"var-debug"===t.t0?10:12;break;case 6:return this.scripts[n]=this.loadTypeVar(e,o),t.abrupt("break",13);case 8:return this.scripts[n]=this.loadTypeUMD(e,o),t.abrupt("break",13);case 10:return this.scripts[n]=this.loadTypeVarDebug(e,o),t.abrupt("break",13);case 12:throw new Error("Unknown package type ".concat(e.type));case 13:return t.next=15,this.scripts[n];case 15:return t.abrupt("return",t.sent);case 16:case"end":return t.stop()}}),t,this)}))),function(t,e){return _load.apply(this,arguments)})},{key:"loadTypeVar",value:function(){var _loadTypeVar=_asyncToGenerator(_regeneratorRuntime().mark((function _callee2(scripts,opts){var scriptContents,dependencies,varName;return _regeneratorRuntime().wrap((function _callee2$(_context2){for(;;)switch(_context2.prev=_context2.next){case 0:return _context2.next=2,(0,_utils__WEBPACK_IMPORTED_MODULE_0__.Qd)([].concat(_toConsumableArray(scripts.vendors),[scripts.main]));case 2:return scriptContents=_context2.sent,_context2.next=5,opts.dependsOn;case 5:return dependencies=_context2.sent,varName=scripts.name,_context2.abrupt("return",eval("\n            ".concat(Object.keys(dependencies).map((function(t){return"const ".concat(t," = dependencies['").concat(t,"'];")})).join(""),"\n            ").concat(scriptContents.join(";"),";\n            ").concat(varName,";\n        ")));case 8:case"end":return _context2.stop()}}),_callee2)})));function loadTypeVar(t,e){return _loadTypeVar.apply(this,arguments)}return loadTypeVar}()},{key:"loadTypeUMD",value:function(){var _loadTypeUMD=_asyncToGenerator(_regeneratorRuntime().mark((function _callee3(scripts,opts){var scriptContents,dependencies,varName;return _regeneratorRuntime().wrap((function _callee3$(_context3){for(;;)switch(_context3.prev=_context3.next){case 0:return _context3.next=2,(0,_utils__WEBPACK_IMPORTED_MODULE_0__.Qd)([].concat(_toConsumableArray(scripts.vendors),[scripts.main]));case 2:return scriptContents=_context3.sent,_context3.next=5,opts.dependsOn;case 5:return dependencies=_context3.sent,varName=scripts.name,_context3.abrupt("return",eval("\n            'use strict';\n            (function () {\n                ".concat(Object.keys(dependencies).map((function(t){return"window['".concat(t,"'] = dependencies['").concat(t,"'];")})).join(""),"\n                ").concat(scriptContents.join(";"),";\n            })();\n            ").concat(Object.keys(dependencies).map((function(t){return"delete window['".concat(t,"'];")})).join(""),"\n            var tmp = window['").concat(varName,"'];\n            delete window['").concat(varName,"'];\n            tmp;\n        ")));case 8:case"end":return _context3.stop()}}),_callee3)})));function loadTypeUMD(t,e){return _loadTypeUMD.apply(this,arguments)}return loadTypeUMD}()},{key:"loadTypeVarDebug",value:(_loadTypeVarDebug=_asyncToGenerator(_regeneratorRuntime().mark((function t(e,r){var n,o,i,a,c,u;return _regeneratorRuntime().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,r.dependsOn;case 2:return n=t.sent,o=[].concat(_toConsumableArray(e.vendors),[e.main]),i=e.name,window["dependencies_".concat((0,_utils__WEBPACK_IMPORTED_MODULE_0__.un)(o))]=n,(0,_utils__WEBPACK_IMPORTED_MODULE_0__.Vp)("\n            ".concat(Object.keys(n).map((function(t){return"var ".concat(t," = window['dependencies_").concat((0,_utils__WEBPACK_IMPORTED_MODULE_0__.un)(o),"']['").concat(t,"'];")})).join(""),"\n        ")),t.next=9,Promise.all(o.map((function(t){return(0,_utils__WEBPACK_IMPORTED_MODULE_0__.Zx)(t)})).reverse());case 9:return a=t.sent,c=_slicedToArray(a,1),u=c[0],(0,_utils__WEBPACK_IMPORTED_MODULE_0__.Vp)("\n            window['script".concat((0,_utils__WEBPACK_IMPORTED_MODULE_0__.un)(o),"'] = ").concat(i,";\n        "),{after:u}),t.abrupt("return",window["script".concat((0,_utils__WEBPACK_IMPORTED_MODULE_0__.un)(o))]);case 14:case"end":return t.stop()}}),t)}))),function(t,e){return _loadTypeVarDebug.apply(this,arguments)})}]),Script}();_defineProperty(Script,"defaultOptions",{dependsOn:Promise.resolve({})}),_defineProperty(Script,"scripts",{});const __WEBPACK_DEFAULT_EXPORT__=Script},728:(t,e,r)=>{function n(t){return n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},n(t)}function o(){o=function(){return t};var t={},e=Object.prototype,r=e.hasOwnProperty,i="function"==typeof Symbol?Symbol:{},a=i.iterator||"@@iterator",c=i.asyncIterator||"@@asyncIterator",u=i.toStringTag||"@@toStringTag";function s(t,e,r){return Object.defineProperty(t,e,{value:r,enumerable:!0,configurable:!0,writable:!0}),t[e]}try{s({},"")}catch(t){s=function(t,e,r){return t[e]=r}}function l(t,e,r,n){var o=e&&e.prototype instanceof h?e:h,i=Object.create(o.prototype),a=new L(n||[]);return i._invoke=function(t,e,r){var n="suspendedStart";return function(o,i){if("executing"===n)throw new Error("Generator is already running");if("completed"===n){if("throw"===o)throw i;return{value:void 0,done:!0}}for(r.method=o,r.arg=i;;){var a=r.delegate;if(a){var c=x(a,r);if(c){if(c===p)continue;return c}}if("next"===r.method)r.sent=r._sent=r.arg;else if("throw"===r.method){if("suspendedStart"===n)throw n="completed",r.arg;r.dispatchException(r.arg)}else"return"===r.method&&r.abrupt("return",r.arg);n="executing";var u=f(t,e,r);if("normal"===u.type){if(n=r.done?"completed":"suspendedYield",u.arg===p)continue;return{value:u.arg,done:r.done}}"throw"===u.type&&(n="completed",r.method="throw",r.arg=u.arg)}}}(t,r,a),i}function f(t,e,r){try{return{type:"normal",arg:t.call(e,r)}}catch(t){return{type:"throw",arg:t}}}t.wrap=l;var p={};function h(){}function y(){}function d(){}var v={};s(v,a,(function(){return this}));var m=Object.getPrototypeOf,g=m&&m(m(j([])));g&&g!==e&&r.call(g,a)&&(v=g);var w=d.prototype=h.prototype=Object.create(v);function b(t){["next","throw","return"].forEach((function(e){s(t,e,(function(t){return this._invoke(e,t)}))}))}function _(t,e){function o(i,a,c,u){var s=f(t[i],t,a);if("throw"!==s.type){var l=s.arg,p=l.value;return p&&"object"==n(p)&&r.call(p,"__await")?e.resolve(p.__await).then((function(t){o("next",t,c,u)}),(function(t){o("throw",t,c,u)})):e.resolve(p).then((function(t){l.value=t,c(l)}),(function(t){return o("throw",t,c,u)}))}u(s.arg)}var i;this._invoke=function(t,r){function n(){return new e((function(e,n){o(t,r,e,n)}))}return i=i?i.then(n,n):n()}}function x(t,e){var r=t.iterator[e.method];if(void 0===r){if(e.delegate=null,"throw"===e.method){if(t.iterator.return&&(e.method="return",e.arg=void 0,x(t,e),"throw"===e.method))return p;e.method="throw",e.arg=new TypeError("The iterator does not provide a 'throw' method")}return p}var n=f(r,t.iterator,e.arg);if("throw"===n.type)return e.method="throw",e.arg=n.arg,e.delegate=null,p;var o=n.arg;return o?o.done?(e[t.resultName]=o.value,e.next=t.nextLoc,"return"!==e.method&&(e.method="next",e.arg=void 0),e.delegate=null,p):o:(e.method="throw",e.arg=new TypeError("iterator result is not an object"),e.delegate=null,p)}function O(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function E(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function L(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(O,this),this.reset(!0)}function j(t){if(t){var e=t[a];if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var n=-1,o=function e(){for(;++n<t.length;)if(r.call(t,n))return e.value=t[n],e.done=!1,e;return e.value=void 0,e.done=!0,e};return o.next=o}}return{next:P}}function P(){return{value:void 0,done:!0}}return y.prototype=d,s(w,"constructor",d),s(d,"constructor",y),y.displayName=s(d,u,"GeneratorFunction"),t.isGeneratorFunction=function(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===y||"GeneratorFunction"===(e.displayName||e.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,d):(t.__proto__=d,s(t,u,"GeneratorFunction")),t.prototype=Object.create(w),t},t.awrap=function(t){return{__await:t}},b(_.prototype),s(_.prototype,c,(function(){return this})),t.AsyncIterator=_,t.async=function(e,r,n,o,i){void 0===i&&(i=Promise);var a=new _(l(e,r,n,o),i);return t.isGeneratorFunction(r)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},b(w),s(w,u,"Generator"),s(w,a,(function(){return this})),s(w,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var e=[];for(var r in t)e.push(r);return e.reverse(),function r(){for(;e.length;){var n=e.pop();if(n in t)return r.value=n,r.done=!1,r}return r.done=!0,r}},t.values=j,L.prototype={constructor:L,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(E),!t)for(var e in this)"t"===e.charAt(0)&&r.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var e=this;function n(r,n){return a.type="throw",a.arg=t,e.next=r,n&&(e.method="next",e.arg=void 0),!!n}for(var o=this.tryEntries.length-1;o>=0;--o){var i=this.tryEntries[o],a=i.completion;if("root"===i.tryLoc)return n("end");if(i.tryLoc<=this.prev){var c=r.call(i,"catchLoc"),u=r.call(i,"finallyLoc");if(c&&u){if(this.prev<i.catchLoc)return n(i.catchLoc,!0);if(this.prev<i.finallyLoc)return n(i.finallyLoc)}else if(c){if(this.prev<i.catchLoc)return n(i.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return n(i.finallyLoc)}}}},abrupt:function(t,e){for(var n=this.tryEntries.length-1;n>=0;--n){var o=this.tryEntries[n];if(o.tryLoc<=this.prev&&r.call(o,"finallyLoc")&&this.prev<o.finallyLoc){var i=o;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=e&&e<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=t,a.arg=e,i?(this.method="next",this.next=i.finallyLoc,p):this.complete(a)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),p},finish:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var r=this.tryEntries[e];if(r.finallyLoc===t)return this.complete(r.completion,r.afterLoc),E(r),p}},catch:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var r=this.tryEntries[e];if(r.tryLoc===t){var n=r.completion;if("throw"===n.type){var o=n.arg;E(r)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,e,r){return this.delegate={iterator:j(t),resultName:e,nextLoc:r},"next"===this.method&&(this.arg=void 0),p}},t}function i(t,e,r,n,o,i,a){try{var c=t[i](a),u=c.value}catch(t){return void r(t)}c.done?e(u):Promise.resolve(u).then(n,o)}function a(t){return function(){var e=this,r=arguments;return new Promise((function(n,o){var a=t.apply(e,r);function c(t){i(a,n,o,c,u,"next",t)}function u(t){i(a,n,o,c,u,"throw",t)}c(void 0)}))}}function c(t){var e,r=JSON.stringify(t),n=0;if(0===r.length)return n;for(e=0;e<r.length;e++)n=(n<<5)-n+r.charCodeAt(e),n|=0;return n}function u(t){return s.apply(this,arguments)}function s(){return(s=a(o().mark((function t(e){var r;return o().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return r=e.map((function(t){return fetch(t).then((function(t){return t.text()}))})),t.next=3,Promise.all(r);case 3:return t.abrupt("return",t.sent);case 4:case"end":return t.stop()}}),t)})))).apply(this,arguments)}function l(t){return f.apply(this,arguments)}function f(){return f=a(o().mark((function t(e){var r,n=arguments;return o().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return r=n.length>1&&void 0!==n[1]?n[1]:{},t.abrupt("return",new Promise((function(t){var n=r.prepend,o=void 0!==n&&n,i=r.silent,a=void 0!==i&&i,c=document.createElement("script");c.onload=function(){return t(c)},c.type="text/javascript",c.async=!1,c.src=e,o?document.head.prepend(c):document.head.append(c),a&&document.head.removeChild(c)})));case 2:case"end":return t.stop()}}),t)}))),f.apply(this,arguments)}function p(t){var e=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},r=e.after,n=void 0===r?null:r,o=e.prepend,i=void 0!==o&&o,a=e.silent,c=void 0!==a&&a,u=document.createElement("script");u.type="text/javascript",u.appendChild(document.createTextNode(t)),n?n.after(u):i?document.head.prepend(u):document.head.append(u),c&&document.head.removeChild(u)}function h(t,e){return"."===t[0]&&"/"===t[1]?"".concat(e).concat(t.substring(1)):t}r.d(e,{AH:()=>h,Qd:()=>u,Vp:()=>p,Zx:()=>l,un:()=>c})}},__webpack_module_cache__={};function __webpack_require__(t){var e=__webpack_module_cache__[t];if(void 0!==e)return e.exports;var r=__webpack_module_cache__[t]={exports:{}};return __webpack_modules__[t](r,r.exports,__webpack_require__),r.exports}__webpack_require__.d=(t,e)=>{for(var r in e)__webpack_require__.o(e,r)&&!__webpack_require__.o(t,r)&&Object.defineProperty(t,r,{enumerable:!0,get:e[r]})},__webpack_require__.o=(t,e)=>Object.prototype.hasOwnProperty.call(t,e);var __webpack_exports__={};(()=>{function t(t,e){for(var r=0;r<e.length;r++){var n=e[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(t,n.key,n)}}function e(e,r,n){return r&&t(e.prototype,r),n&&t(e,n),Object.defineProperty(e,"prototype",{writable:!1}),e}function r(t,e,r){return e in t?Object.defineProperty(t,e,{value:r,enumerable:!0,configurable:!0,writable:!0}):t[e]=r,t}__webpack_require__.d(__webpack_exports__,{default:()=>ot});var n=e((function t(e,r,n){!function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t),this.id="".concat(n,"-b").concat(t.instance),this.block=r,this.element=e,this.element.setAttribute("data-block",this.id),t.instance++}));r(n,"dependencies",[]),r(n,"instance",1);const o=n;function i(t){return i="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},i(t)}function a(){a=function(){return t};var t={},e=Object.prototype,r=e.hasOwnProperty,n="function"==typeof Symbol?Symbol:{},o=n.iterator||"@@iterator",c=n.asyncIterator||"@@asyncIterator",u=n.toStringTag||"@@toStringTag";function s(t,e,r){return Object.defineProperty(t,e,{value:r,enumerable:!0,configurable:!0,writable:!0}),t[e]}try{s({},"")}catch(t){s=function(t,e,r){return t[e]=r}}function l(t,e,r,n){var o=e&&e.prototype instanceof h?e:h,i=Object.create(o.prototype),a=new L(n||[]);return i._invoke=function(t,e,r){var n="suspendedStart";return function(o,i){if("executing"===n)throw new Error("Generator is already running");if("completed"===n){if("throw"===o)throw i;return{value:void 0,done:!0}}for(r.method=o,r.arg=i;;){var a=r.delegate;if(a){var c=x(a,r);if(c){if(c===p)continue;return c}}if("next"===r.method)r.sent=r._sent=r.arg;else if("throw"===r.method){if("suspendedStart"===n)throw n="completed",r.arg;r.dispatchException(r.arg)}else"return"===r.method&&r.abrupt("return",r.arg);n="executing";var u=f(t,e,r);if("normal"===u.type){if(n=r.done?"completed":"suspendedYield",u.arg===p)continue;return{value:u.arg,done:r.done}}"throw"===u.type&&(n="completed",r.method="throw",r.arg=u.arg)}}}(t,r,a),i}function f(t,e,r){try{return{type:"normal",arg:t.call(e,r)}}catch(t){return{type:"throw",arg:t}}}t.wrap=l;var p={};function h(){}function y(){}function d(){}var v={};s(v,o,(function(){return this}));var m=Object.getPrototypeOf,g=m&&m(m(j([])));g&&g!==e&&r.call(g,o)&&(v=g);var w=d.prototype=h.prototype=Object.create(v);function b(t){["next","throw","return"].forEach((function(e){s(t,e,(function(t){return this._invoke(e,t)}))}))}function _(t,e){function n(o,a,c,u){var s=f(t[o],t,a);if("throw"!==s.type){var l=s.arg,p=l.value;return p&&"object"==i(p)&&r.call(p,"__await")?e.resolve(p.__await).then((function(t){n("next",t,c,u)}),(function(t){n("throw",t,c,u)})):e.resolve(p).then((function(t){l.value=t,c(l)}),(function(t){return n("throw",t,c,u)}))}u(s.arg)}var o;this._invoke=function(t,r){function i(){return new e((function(e,o){n(t,r,e,o)}))}return o=o?o.then(i,i):i()}}function x(t,e){var r=t.iterator[e.method];if(void 0===r){if(e.delegate=null,"throw"===e.method){if(t.iterator.return&&(e.method="return",e.arg=void 0,x(t,e),"throw"===e.method))return p;e.method="throw",e.arg=new TypeError("The iterator does not provide a 'throw' method")}return p}var n=f(r,t.iterator,e.arg);if("throw"===n.type)return e.method="throw",e.arg=n.arg,e.delegate=null,p;var o=n.arg;return o?o.done?(e[t.resultName]=o.value,e.next=t.nextLoc,"return"!==e.method&&(e.method="next",e.arg=void 0),e.delegate=null,p):o:(e.method="throw",e.arg=new TypeError("iterator result is not an object"),e.delegate=null,p)}function O(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function E(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function L(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(O,this),this.reset(!0)}function j(t){if(t){var e=t[o];if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var n=-1,i=function e(){for(;++n<t.length;)if(r.call(t,n))return e.value=t[n],e.done=!1,e;return e.value=void 0,e.done=!0,e};return i.next=i}}return{next:P}}function P(){return{value:void 0,done:!0}}return y.prototype=d,s(w,"constructor",d),s(d,"constructor",y),y.displayName=s(d,u,"GeneratorFunction"),t.isGeneratorFunction=function(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===y||"GeneratorFunction"===(e.displayName||e.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,d):(t.__proto__=d,s(t,u,"GeneratorFunction")),t.prototype=Object.create(w),t},t.awrap=function(t){return{__await:t}},b(_.prototype),s(_.prototype,c,(function(){return this})),t.AsyncIterator=_,t.async=function(e,r,n,o,i){void 0===i&&(i=Promise);var a=new _(l(e,r,n,o),i);return t.isGeneratorFunction(r)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},b(w),s(w,u,"Generator"),s(w,o,(function(){return this})),s(w,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var e=[];for(var r in t)e.push(r);return e.reverse(),function r(){for(;e.length;){var n=e.pop();if(n in t)return r.value=n,r.done=!1,r}return r.done=!0,r}},t.values=j,L.prototype={constructor:L,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(E),!t)for(var e in this)"t"===e.charAt(0)&&r.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var e=this;function n(r,n){return a.type="throw",a.arg=t,e.next=r,n&&(e.method="next",e.arg=void 0),!!n}for(var o=this.tryEntries.length-1;o>=0;--o){var i=this.tryEntries[o],a=i.completion;if("root"===i.tryLoc)return n("end");if(i.tryLoc<=this.prev){var c=r.call(i,"catchLoc"),u=r.call(i,"finallyLoc");if(c&&u){if(this.prev<i.catchLoc)return n(i.catchLoc,!0);if(this.prev<i.finallyLoc)return n(i.finallyLoc)}else if(c){if(this.prev<i.catchLoc)return n(i.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return n(i.finallyLoc)}}}},abrupt:function(t,e){for(var n=this.tryEntries.length-1;n>=0;--n){var o=this.tryEntries[n];if(o.tryLoc<=this.prev&&r.call(o,"finallyLoc")&&this.prev<o.finallyLoc){var i=o;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=e&&e<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=t,a.arg=e,i?(this.method="next",this.next=i.finallyLoc,p):this.complete(a)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),p},finish:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var r=this.tryEntries[e];if(r.finallyLoc===t)return this.complete(r.completion,r.afterLoc),E(r),p}},catch:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var r=this.tryEntries[e];if(r.tryLoc===t){var n=r.completion;if("throw"===n.type){var o=n.arg;E(r)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,e,r){return this.delegate={iterator:j(t),resultName:e,nextLoc:r},"next"===this.method&&(this.arg=void 0),p}},t}function c(t,e){(null==e||e>t.length)&&(e=t.length);for(var r=0,n=new Array(e);r<e;r++)n[r]=t[r];return n}function u(t,e,r,n,o,i,a){try{var c=t[i](a),u=c.value}catch(t){return void r(t)}c.done?e(u):Promise.resolve(u).then(n,o)}function s(t){return function(){var e=this,r=arguments;return new Promise((function(n,o){var i=t.apply(e,r);function a(t){u(i,n,o,a,c,"next",t)}function c(t){u(i,n,o,a,c,"throw",t)}a(void 0)}))}}function l(t,e){var r=Object.keys(t);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(t);e&&(n=n.filter((function(e){return Object.getOwnPropertyDescriptor(t,e).enumerable}))),r.push.apply(r,n)}return r}function f(t){for(var e=1;e<arguments.length;e++){var r=null!=arguments[e]?arguments[e]:{};e%2?l(Object(r),!0).forEach((function(e){h(t,e,r[e])})):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(r)):l(Object(r)).forEach((function(e){Object.defineProperty(t,e,Object.getOwnPropertyDescriptor(r,e))}))}return t}function p(t,e){for(var r=0;r<e.length;r++){var n=e[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(t,n.key,n)}}function h(t,e,r){return e in t?Object.defineProperty(t,e,{value:r,enumerable:!0,configurable:!0,writable:!0}):t[e]=r,t}var y=function(){function t(e){!function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t),this.scripts=f(f({},e.scripts),{},{vendors:e.scripts.vendors||[]}),this.styles=e.styles||[],this.dependencies=e.dependencies||[]}var e,r,n;return e=t,null,r=[{key:"add",value:function(e,r,n){var o="".concat(e,"-").concat(r);this.cache[o]=new t(n)}},{key:"get",value:function(t,e){var r="".concat(t,"-").concat(e);if(this.cache[r])return this.cache[r];throw new Error("Can't find dependency ".concat(t," with version ").concat(e))}},{key:"load",value:(n=s(a().mark((function e(r){var n;return a().wrap((function(e){for(;;)switch(e.prev=e.next){case 0:return n={},e.next=3,Promise.all(r.map(function(){var e=s(a().mark((function e(r){var o,i,u,s,l,f,p,h,y,d;return a().wrap((function(e){for(;;)switch(e.prev=e.next){case 0:return o=r.name,i=r.version,u=r.variable,s=t.get(o,i),l=t.load(s.dependencies),f=P.Z.load(s.scripts,{dependsOn:l}),p=R.load(s.styles,{dependsOn:l}),e.next=7,Promise.all([f,l,p]);case 7:h=e.sent,v=1,y=function(t){if(Array.isArray(t))return t}(a=h)||function(t,e){var r=null==t?null:"undefined"!=typeof Symbol&&t[Symbol.iterator]||t["@@iterator"];if(null!=r){var n,o,i=[],a=!0,c=!1;try{for(r=r.call(t);!(a=(n=r.next()).done)&&(i.push(n.value),!e||i.length!==e);a=!0);}catch(t){c=!0,o=t}finally{try{a||null==r.return||r.return()}finally{if(c)throw o}}return i}}(a,v)||function(t,e){if(t){if("string"==typeof t)return c(t,e);var r=Object.prototype.toString.call(t).slice(8,-1);return"Object"===r&&t.constructor&&(r=t.constructor.name),"Map"===r||"Set"===r?Array.from(t):"Arguments"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?c(t,e):void 0}}(a,v)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}(),d=y[0],n[u]=d;case 11:case"end":return e.stop()}var a,v}),e)})));return function(t){return e.apply(this,arguments)}}()));case 3:return e.abrupt("return",n);case 4:case"end":return e.stop()}}),e)}))),function(t){return n.apply(this,arguments)})}],r&&p(e,r),Object.defineProperty(e,"prototype",{writable:!1}),t}();h(y,"cache",{}),y.add("react","18",{scripts:{main:"https://assets.softr-files.com/softr-blocks/prod/libs/react/18.2.0/react18.min.js",type:"umd",name:"React"}}),y.add("react-dom","18",{dependencies:[{name:"react",version:"18",variable:"React"}],scripts:{main:"https://assets.softr-files.com/softr-blocks/prod/libs/react/18.2.0/react-dom18.min.js",type:"umd",name:"ReactDOM"}});const d=y;var v=__webpack_require__(728);function m(t){return m="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},m(t)}function g(){g=function(){return t};var t={},e=Object.prototype,r=e.hasOwnProperty,n="function"==typeof Symbol?Symbol:{},o=n.iterator||"@@iterator",i=n.asyncIterator||"@@asyncIterator",a=n.toStringTag||"@@toStringTag";function c(t,e,r){return Object.defineProperty(t,e,{value:r,enumerable:!0,configurable:!0,writable:!0}),t[e]}try{c({},"")}catch(t){c=function(t,e,r){return t[e]=r}}function u(t,e,r,n){var o=e&&e.prototype instanceof f?e:f,i=Object.create(o.prototype),a=new L(n||[]);return i._invoke=function(t,e,r){var n="suspendedStart";return function(o,i){if("executing"===n)throw new Error("Generator is already running");if("completed"===n){if("throw"===o)throw i;return{value:void 0,done:!0}}for(r.method=o,r.arg=i;;){var a=r.delegate;if(a){var c=x(a,r);if(c){if(c===l)continue;return c}}if("next"===r.method)r.sent=r._sent=r.arg;else if("throw"===r.method){if("suspendedStart"===n)throw n="completed",r.arg;r.dispatchException(r.arg)}else"return"===r.method&&r.abrupt("return",r.arg);n="executing";var u=s(t,e,r);if("normal"===u.type){if(n=r.done?"completed":"suspendedYield",u.arg===l)continue;return{value:u.arg,done:r.done}}"throw"===u.type&&(n="completed",r.method="throw",r.arg=u.arg)}}}(t,r,a),i}function s(t,e,r){try{return{type:"normal",arg:t.call(e,r)}}catch(t){return{type:"throw",arg:t}}}t.wrap=u;var l={};function f(){}function p(){}function h(){}var y={};c(y,o,(function(){return this}));var d=Object.getPrototypeOf,v=d&&d(d(j([])));v&&v!==e&&r.call(v,o)&&(y=v);var w=h.prototype=f.prototype=Object.create(y);function b(t){["next","throw","return"].forEach((function(e){c(t,e,(function(t){return this._invoke(e,t)}))}))}function _(t,e){function n(o,i,a,c){var u=s(t[o],t,i);if("throw"!==u.type){var l=u.arg,f=l.value;return f&&"object"==m(f)&&r.call(f,"__await")?e.resolve(f.__await).then((function(t){n("next",t,a,c)}),(function(t){n("throw",t,a,c)})):e.resolve(f).then((function(t){l.value=t,a(l)}),(function(t){return n("throw",t,a,c)}))}c(u.arg)}var o;this._invoke=function(t,r){function i(){return new e((function(e,o){n(t,r,e,o)}))}return o=o?o.then(i,i):i()}}function x(t,e){var r=t.iterator[e.method];if(void 0===r){if(e.delegate=null,"throw"===e.method){if(t.iterator.return&&(e.method="return",e.arg=void 0,x(t,e),"throw"===e.method))return l;e.method="throw",e.arg=new TypeError("The iterator does not provide a 'throw' method")}return l}var n=s(r,t.iterator,e.arg);if("throw"===n.type)return e.method="throw",e.arg=n.arg,e.delegate=null,l;var o=n.arg;return o?o.done?(e[t.resultName]=o.value,e.next=t.nextLoc,"return"!==e.method&&(e.method="next",e.arg=void 0),e.delegate=null,l):o:(e.method="throw",e.arg=new TypeError("iterator result is not an object"),e.delegate=null,l)}function O(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function E(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function L(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(O,this),this.reset(!0)}function j(t){if(t){var e=t[o];if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var n=-1,i=function e(){for(;++n<t.length;)if(r.call(t,n))return e.value=t[n],e.done=!1,e;return e.value=void 0,e.done=!0,e};return i.next=i}}return{next:P}}function P(){return{value:void 0,done:!0}}return p.prototype=h,c(w,"constructor",h),c(h,"constructor",p),p.displayName=c(h,a,"GeneratorFunction"),t.isGeneratorFunction=function(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===p||"GeneratorFunction"===(e.displayName||e.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,h):(t.__proto__=h,c(t,a,"GeneratorFunction")),t.prototype=Object.create(w),t},t.awrap=function(t){return{__await:t}},b(_.prototype),c(_.prototype,i,(function(){return this})),t.AsyncIterator=_,t.async=function(e,r,n,o,i){void 0===i&&(i=Promise);var a=new _(u(e,r,n,o),i);return t.isGeneratorFunction(r)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},b(w),c(w,a,"Generator"),c(w,o,(function(){return this})),c(w,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var e=[];for(var r in t)e.push(r);return e.reverse(),function r(){for(;e.length;){var n=e.pop();if(n in t)return r.value=n,r.done=!1,r}return r.done=!0,r}},t.values=j,L.prototype={constructor:L,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(E),!t)for(var e in this)"t"===e.charAt(0)&&r.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var e=this;function n(r,n){return a.type="throw",a.arg=t,e.next=r,n&&(e.method="next",e.arg=void 0),!!n}for(var o=this.tryEntries.length-1;o>=0;--o){var i=this.tryEntries[o],a=i.completion;if("root"===i.tryLoc)return n("end");if(i.tryLoc<=this.prev){var c=r.call(i,"catchLoc"),u=r.call(i,"finallyLoc");if(c&&u){if(this.prev<i.catchLoc)return n(i.catchLoc,!0);if(this.prev<i.finallyLoc)return n(i.finallyLoc)}else if(c){if(this.prev<i.catchLoc)return n(i.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return n(i.finallyLoc)}}}},abrupt:function(t,e){for(var n=this.tryEntries.length-1;n>=0;--n){var o=this.tryEntries[n];if(o.tryLoc<=this.prev&&r.call(o,"finallyLoc")&&this.prev<o.finallyLoc){var i=o;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=e&&e<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=t,a.arg=e,i?(this.method="next",this.next=i.finallyLoc,l):this.complete(a)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),l},finish:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var r=this.tryEntries[e];if(r.finallyLoc===t)return this.complete(r.completion,r.afterLoc),E(r),l}},catch:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var r=this.tryEntries[e];if(r.tryLoc===t){var n=r.completion;if("throw"===n.type){var o=n.arg;E(r)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,e,r){return this.delegate={iterator:j(t),resultName:e,nextLoc:r},"next"===this.method&&(this.arg=void 0),l}},t}function w(t,e,r,n,o,i,a){try{var c=t[i](a),u=c.value}catch(t){return void r(t)}c.done?e(u):Promise.resolve(u).then(n,o)}function b(t){return function(){var e=this,r=arguments;return new Promise((function(n,o){var i=t.apply(e,r);function a(t){w(i,n,o,a,c,"next",t)}function c(t){w(i,n,o,a,c,"throw",t)}a(void 0)}))}}function _(t,e){var r=Object.keys(t);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(t);e&&(n=n.filter((function(e){return Object.getOwnPropertyDescriptor(t,e).enumerable}))),r.push.apply(r,n)}return r}function x(t){for(var e=1;e<arguments.length;e++){var r=null!=arguments[e]?arguments[e]:{};e%2?_(Object(r),!0).forEach((function(e){E(t,e,r[e])})):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(r)):_(Object(r)).forEach((function(e){Object.defineProperty(t,e,Object.getOwnPropertyDescriptor(r,e))}))}return t}function O(t,e){for(var r=0;r<e.length;r++){var n=e[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(t,n.key,n)}}function E(t,e,r){return e in t?Object.defineProperty(t,e,{value:r,enumerable:!0,configurable:!0,writable:!0}):t[e]=r,t}var L=function(){function t(e,r){!function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t),this.scripts=x(x({},e.scripts),{},{vendors:(e.scripts.vendors||[]).map((function(t){return(0,v.AH)(t,r)})),main:(0,v.AH)(e.scripts.main,r)}),this.styles=(e.styles||[]).map((function(t){return(0,v.AH)(t,r)})),this.dependencies=e.dependencies||[],this.renderer=e.renderer||""}var e,r,n;return e=t,null,r=[{key:"get",value:(n=b(g().mark((function e(r,n,o){var i;return g().wrap((function(e){for(;;)switch(e.prev=e.next){case 0:return i="".concat(r,"-").concat(n),this.manifests[i]||(this.manifests[i]=b(g().mark((function e(){var i,a;return g().wrap((function(e){for(;;)switch(e.prev=e.next){case 0:return i="".concat(o,"/").concat(r,"/").concat(n),e.next=3,fetch("".concat(i,"/manifest.json?crossorigin")).then((function(t){return t.json()})).catch((function(t){return console.log("can't load manifest json")}));case 3:if((a=e.sent)||-1===o.indexOf("localhost")){e.next=10;break}return console.log("Can't load manifest json. Tring to get it from prod"),i="https://assets.softr-files.com/softr-blocks/prod/blocks/".concat(r,"/").concat(n),e.next=9,fetch("https://assets.softr-files.com/softr-blocks/prod/blocks/".concat(r,"/").concat(n,"/manifest.json")).then((function(t){return t.json()}));case 9:a=e.sent;case 10:return e.abrupt("return",new t(a,i));case 11:case"end":return e.stop()}}),e)})))()),e.next=4,this.manifests[i];case 4:return e.abrupt("return",e.sent);case 5:case"end":return e.stop()}}),e,this)}))),function(t,e,r){return n.apply(this,arguments)})},{key:"add",value:function(e,r,n,o){var i="".concat(e,"-").concat(r);this.manifests[i]=b(g().mark((function e(){return g().wrap((function(e){for(;;)switch(e.prev=e.next){case 0:return e.abrupt("return",new t(n,o));case 1:case"end":return e.stop()}}),e)})))()}}],r&&O(e,r),Object.defineProperty(e,"prototype",{writable:!1}),t}();E(L,"manifests",{});const j=L;var P=__webpack_require__(263);function k(t){return k="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},k(t)}function S(){S=function(){return t};var t={},e=Object.prototype,r=e.hasOwnProperty,n="function"==typeof Symbol?Symbol:{},o=n.iterator||"@@iterator",i=n.asyncIterator||"@@asyncIterator",a=n.toStringTag||"@@toStringTag";function c(t,e,r){return Object.defineProperty(t,e,{value:r,enumerable:!0,configurable:!0,writable:!0}),t[e]}try{c({},"")}catch(t){c=function(t,e,r){return t[e]=r}}function u(t,e,r,n){var o=e&&e.prototype instanceof f?e:f,i=Object.create(o.prototype),a=new O(n||[]);return i._invoke=function(t,e,r){var n="suspendedStart";return function(o,i){if("executing"===n)throw new Error("Generator is already running");if("completed"===n){if("throw"===o)throw i;return{value:void 0,done:!0}}for(r.method=o,r.arg=i;;){var a=r.delegate;if(a){var c=b(a,r);if(c){if(c===l)continue;return c}}if("next"===r.method)r.sent=r._sent=r.arg;else if("throw"===r.method){if("suspendedStart"===n)throw n="completed",r.arg;r.dispatchException(r.arg)}else"return"===r.method&&r.abrupt("return",r.arg);n="executing";var u=s(t,e,r);if("normal"===u.type){if(n=r.done?"completed":"suspendedYield",u.arg===l)continue;return{value:u.arg,done:r.done}}"throw"===u.type&&(n="completed",r.method="throw",r.arg=u.arg)}}}(t,r,a),i}function s(t,e,r){try{return{type:"normal",arg:t.call(e,r)}}catch(t){return{type:"throw",arg:t}}}t.wrap=u;var l={};function f(){}function p(){}function h(){}var y={};c(y,o,(function(){return this}));var d=Object.getPrototypeOf,v=d&&d(d(E([])));v&&v!==e&&r.call(v,o)&&(y=v);var m=h.prototype=f.prototype=Object.create(y);function g(t){["next","throw","return"].forEach((function(e){c(t,e,(function(t){return this._invoke(e,t)}))}))}function w(t,e){function n(o,i,a,c){var u=s(t[o],t,i);if("throw"!==u.type){var l=u.arg,f=l.value;return f&&"object"==k(f)&&r.call(f,"__await")?e.resolve(f.__await).then((function(t){n("next",t,a,c)}),(function(t){n("throw",t,a,c)})):e.resolve(f).then((function(t){l.value=t,a(l)}),(function(t){return n("throw",t,a,c)}))}c(u.arg)}var o;this._invoke=function(t,r){function i(){return new e((function(e,o){n(t,r,e,o)}))}return o=o?o.then(i,i):i()}}function b(t,e){var r=t.iterator[e.method];if(void 0===r){if(e.delegate=null,"throw"===e.method){if(t.iterator.return&&(e.method="return",e.arg=void 0,b(t,e),"throw"===e.method))return l;e.method="throw",e.arg=new TypeError("The iterator does not provide a 'throw' method")}return l}var n=s(r,t.iterator,e.arg);if("throw"===n.type)return e.method="throw",e.arg=n.arg,e.delegate=null,l;var o=n.arg;return o?o.done?(e[t.resultName]=o.value,e.next=t.nextLoc,"return"!==e.method&&(e.method="next",e.arg=void 0),e.delegate=null,l):o:(e.method="throw",e.arg=new TypeError("iterator result is not an object"),e.delegate=null,l)}function _(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function x(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function O(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(_,this),this.reset(!0)}function E(t){if(t){var e=t[o];if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var n=-1,i=function e(){for(;++n<t.length;)if(r.call(t,n))return e.value=t[n],e.done=!1,e;return e.value=void 0,e.done=!0,e};return i.next=i}}return{next:L}}function L(){return{value:void 0,done:!0}}return p.prototype=h,c(m,"constructor",h),c(h,"constructor",p),p.displayName=c(h,a,"GeneratorFunction"),t.isGeneratorFunction=function(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===p||"GeneratorFunction"===(e.displayName||e.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,h):(t.__proto__=h,c(t,a,"GeneratorFunction")),t.prototype=Object.create(m),t},t.awrap=function(t){return{__await:t}},g(w.prototype),c(w.prototype,i,(function(){return this})),t.AsyncIterator=w,t.async=function(e,r,n,o,i){void 0===i&&(i=Promise);var a=new w(u(e,r,n,o),i);return t.isGeneratorFunction(r)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},g(m),c(m,a,"Generator"),c(m,o,(function(){return this})),c(m,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var e=[];for(var r in t)e.push(r);return e.reverse(),function r(){for(;e.length;){var n=e.pop();if(n in t)return r.value=n,r.done=!1,r}return r.done=!0,r}},t.values=E,O.prototype={constructor:O,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(x),!t)for(var e in this)"t"===e.charAt(0)&&r.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var e=this;function n(r,n){return a.type="throw",a.arg=t,e.next=r,n&&(e.method="next",e.arg=void 0),!!n}for(var o=this.tryEntries.length-1;o>=0;--o){var i=this.tryEntries[o],a=i.completion;if("root"===i.tryLoc)return n("end");if(i.tryLoc<=this.prev){var c=r.call(i,"catchLoc"),u=r.call(i,"finallyLoc");if(c&&u){if(this.prev<i.catchLoc)return n(i.catchLoc,!0);if(this.prev<i.finallyLoc)return n(i.finallyLoc)}else if(c){if(this.prev<i.catchLoc)return n(i.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return n(i.finallyLoc)}}}},abrupt:function(t,e){for(var n=this.tryEntries.length-1;n>=0;--n){var o=this.tryEntries[n];if(o.tryLoc<=this.prev&&r.call(o,"finallyLoc")&&this.prev<o.finallyLoc){var i=o;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=e&&e<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=t,a.arg=e,i?(this.method="next",this.next=i.finallyLoc,l):this.complete(a)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),l},finish:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var r=this.tryEntries[e];if(r.finallyLoc===t)return this.complete(r.completion,r.afterLoc),x(r),l}},catch:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var r=this.tryEntries[e];if(r.tryLoc===t){var n=r.completion;if("throw"===n.type){var o=n.arg;x(r)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,e,r){return this.delegate={iterator:E(t),resultName:e,nextLoc:r},"next"===this.method&&(this.arg=void 0),l}},t}function T(t,e){var r=Object.keys(t);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(t);e&&(n=n.filter((function(e){return Object.getOwnPropertyDescriptor(t,e).enumerable}))),r.push.apply(r,n)}return r}function A(t){for(var e=1;e<arguments.length;e++){var r=null!=arguments[e]?arguments[e]:{};e%2?T(Object(r),!0).forEach((function(e){I(t,e,r[e])})):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(r)):T(Object(r)).forEach((function(e){Object.defineProperty(t,e,Object.getOwnPropertyDescriptor(r,e))}))}return t}function N(t,e,r,n,o,i,a){try{var c=t[i](a),u=c.value}catch(t){return void r(t)}c.done?e(u):Promise.resolve(u).then(n,o)}function G(t){return function(){var e=this,r=arguments;return new Promise((function(n,o){var i=t.apply(e,r);function a(t){N(i,n,o,a,c,"next",t)}function c(t){N(i,n,o,a,c,"throw",t)}a(void 0)}))}}function D(t,e){for(var r=0;r<e.length;r++){var n=e[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(t,n.key,n)}}function I(t,e,r){return e in t?Object.defineProperty(t,e,{value:r,enumerable:!0,configurable:!0,writable:!0}):t[e]=r,t}var C=function(){function t(){!function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t)}var e,r,n,o;return e=t,null,r=[{key:"load",value:(o=G(S().mark((function t(e,r){var n,o,i,a;return S().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:if(n=(0,v.un)(e),o=A(A({},this.defaultOptions),r),e.length){t.next=4;break}return t.abrupt("return",Promise.resolve());case 4:return this.styles[n]||(this.styles[n]=this.loadStyles(e,o)),t.next=7,this.styles[n];case 7:i=t.sent,o.scope&&!this.styleExists('style[data-for="'.concat(o.key,'"]'))&&(a=document.createElement("style"),o.scope&&a.setAttribute("data-for",o.key),a.innerHTML=i,document.head.append(a));case 9:case"end":return t.stop()}}),t,this)}))),function(t,e){return o.apply(this,arguments)})},{key:"loadStyles",value:(n=G(S().mark((function t(e,r){var n,o;return S().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,(0,v.Qd)(e);case 2:return n=t.sent,t.next=5,r.dependsOn;case 5:return o=n.join("\n"),r.scope&&(o=(o=o.replace(/\/\*/g,"/*!")).replace(/([@\w*#.:][^{}]+)[{]/g,(function(t){return"@"===t[0]||"*"===t[0]&&"!"===t[1]||0===t.indexOf("from")||0===t.indexOf("to")||t[0].match(/\d/)?t:t.split(",").map((function(t){return"".concat(r.scope," ").concat(t)})).join(",")}))),t.abrupt("return",o);case 8:case"end":return t.stop()}}),t)}))),function(t,e){return n.apply(this,arguments)})},{key:"styleExists",value:function(t){return!!document.head.querySelector(t)}}],r&&D(e,r),Object.defineProperty(e,"prototype",{writable:!1}),t}();I(C,"defaultOptions",{key:"",dependsOn:Promise.resolve({}),scope:""}),I(C,"styles",{});const R=C;function F(t){return F="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},F(t)}function M(){M=function(){return t};var t={},e=Object.prototype,r=e.hasOwnProperty,n="function"==typeof Symbol?Symbol:{},o=n.iterator||"@@iterator",i=n.asyncIterator||"@@asyncIterator",a=n.toStringTag||"@@toStringTag";function c(t,e,r){return Object.defineProperty(t,e,{value:r,enumerable:!0,configurable:!0,writable:!0}),t[e]}try{c({},"")}catch(t){c=function(t,e,r){return t[e]=r}}function u(t,e,r,n){var o=e&&e.prototype instanceof f?e:f,i=Object.create(o.prototype),a=new O(n||[]);return i._invoke=function(t,e,r){var n="suspendedStart";return function(o,i){if("executing"===n)throw new Error("Generator is already running");if("completed"===n){if("throw"===o)throw i;return{value:void 0,done:!0}}for(r.method=o,r.arg=i;;){var a=r.delegate;if(a){var c=b(a,r);if(c){if(c===l)continue;return c}}if("next"===r.method)r.sent=r._sent=r.arg;else if("throw"===r.method){if("suspendedStart"===n)throw n="completed",r.arg;r.dispatchException(r.arg)}else"return"===r.method&&r.abrupt("return",r.arg);n="executing";var u=s(t,e,r);if("normal"===u.type){if(n=r.done?"completed":"suspendedYield",u.arg===l)continue;return{value:u.arg,done:r.done}}"throw"===u.type&&(n="completed",r.method="throw",r.arg=u.arg)}}}(t,r,a),i}function s(t,e,r){try{return{type:"normal",arg:t.call(e,r)}}catch(t){return{type:"throw",arg:t}}}t.wrap=u;var l={};function f(){}function p(){}function h(){}var y={};c(y,o,(function(){return this}));var d=Object.getPrototypeOf,v=d&&d(d(E([])));v&&v!==e&&r.call(v,o)&&(y=v);var m=h.prototype=f.prototype=Object.create(y);function g(t){["next","throw","return"].forEach((function(e){c(t,e,(function(t){return this._invoke(e,t)}))}))}function w(t,e){function n(o,i,a,c){var u=s(t[o],t,i);if("throw"!==u.type){var l=u.arg,f=l.value;return f&&"object"==F(f)&&r.call(f,"__await")?e.resolve(f.__await).then((function(t){n("next",t,a,c)}),(function(t){n("throw",t,a,c)})):e.resolve(f).then((function(t){l.value=t,a(l)}),(function(t){return n("throw",t,a,c)}))}c(u.arg)}var o;this._invoke=function(t,r){function i(){return new e((function(e,o){n(t,r,e,o)}))}return o=o?o.then(i,i):i()}}function b(t,e){var r=t.iterator[e.method];if(void 0===r){if(e.delegate=null,"throw"===e.method){if(t.iterator.return&&(e.method="return",e.arg=void 0,b(t,e),"throw"===e.method))return l;e.method="throw",e.arg=new TypeError("The iterator does not provide a 'throw' method")}return l}var n=s(r,t.iterator,e.arg);if("throw"===n.type)return e.method="throw",e.arg=n.arg,e.delegate=null,l;var o=n.arg;return o?o.done?(e[t.resultName]=o.value,e.next=t.nextLoc,"return"!==e.method&&(e.method="next",e.arg=void 0),e.delegate=null,l):o:(e.method="throw",e.arg=new TypeError("iterator result is not an object"),e.delegate=null,l)}function _(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function x(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function O(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(_,this),this.reset(!0)}function E(t){if(t){var e=t[o];if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var n=-1,i=function e(){for(;++n<t.length;)if(r.call(t,n))return e.value=t[n],e.done=!1,e;return e.value=void 0,e.done=!0,e};return i.next=i}}return{next:L}}function L(){return{value:void 0,done:!0}}return p.prototype=h,c(m,"constructor",h),c(h,"constructor",p),p.displayName=c(h,a,"GeneratorFunction"),t.isGeneratorFunction=function(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===p||"GeneratorFunction"===(e.displayName||e.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,h):(t.__proto__=h,c(t,a,"GeneratorFunction")),t.prototype=Object.create(m),t},t.awrap=function(t){return{__await:t}},g(w.prototype),c(w.prototype,i,(function(){return this})),t.AsyncIterator=w,t.async=function(e,r,n,o,i){void 0===i&&(i=Promise);var a=new w(u(e,r,n,o),i);return t.isGeneratorFunction(r)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},g(m),c(m,a,"Generator"),c(m,o,(function(){return this})),c(m,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var e=[];for(var r in t)e.push(r);return e.reverse(),function r(){for(;e.length;){var n=e.pop();if(n in t)return r.value=n,r.done=!1,r}return r.done=!0,r}},t.values=E,O.prototype={constructor:O,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(x),!t)for(var e in this)"t"===e.charAt(0)&&r.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var e=this;function n(r,n){return a.type="throw",a.arg=t,e.next=r,n&&(e.method="next",e.arg=void 0),!!n}for(var o=this.tryEntries.length-1;o>=0;--o){var i=this.tryEntries[o],a=i.completion;if("root"===i.tryLoc)return n("end");if(i.tryLoc<=this.prev){var c=r.call(i,"catchLoc"),u=r.call(i,"finallyLoc");if(c&&u){if(this.prev<i.catchLoc)return n(i.catchLoc,!0);if(this.prev<i.finallyLoc)return n(i.finallyLoc)}else if(c){if(this.prev<i.catchLoc)return n(i.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return n(i.finallyLoc)}}}},abrupt:function(t,e){for(var n=this.tryEntries.length-1;n>=0;--n){var o=this.tryEntries[n];if(o.tryLoc<=this.prev&&r.call(o,"finallyLoc")&&this.prev<o.finallyLoc){var i=o;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=e&&e<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=t,a.arg=e,i?(this.method="next",this.next=i.finallyLoc,l):this.complete(a)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),l},finish:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var r=this.tryEntries[e];if(r.finallyLoc===t)return this.complete(r.completion,r.afterLoc),x(r),l}},catch:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var r=this.tryEntries[e];if(r.tryLoc===t){var n=r.completion;if("throw"===n.type){var o=n.arg;x(r)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,e,r){return this.delegate={iterator:E(t),resultName:e,nextLoc:r},"next"===this.method&&(this.arg=void 0),l}},t}function U(t,e){var r=Object.keys(t);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(t);e&&(n=n.filter((function(e){return Object.getOwnPropertyDescriptor(t,e).enumerable}))),r.push.apply(r,n)}return r}function W(t){for(var e=1;e<arguments.length;e++){var r=null!=arguments[e]?arguments[e]:{};e%2?U(Object(r),!0).forEach((function(e){Z(t,e,r[e])})):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(r)):U(Object(r)).forEach((function(e){Object.defineProperty(t,e,Object.getOwnPropertyDescriptor(r,e))}))}return t}function B(t,e){(null==e||e>t.length)&&(e=t.length);for(var r=0,n=new Array(e);r<e;r++)n[r]=t[r];return n}function K(t,e,r,n,o,i,a){try{var c=t[i](a),u=c.value}catch(t){return void r(t)}c.done?e(u):Promise.resolve(u).then(n,o)}function V(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function Y(t,e){for(var r=0;r<e.length;r++){var n=e[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(t,n.key,n)}}function q(t,e){return q=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},q(t,e)}function H(t,e){if(e&&("object"===F(e)||"function"==typeof e))return e;if(void 0!==e)throw new TypeError("Derived constructors may only return object or undefined");return function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(t)}function $(t){return $=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(t){return t.__proto__||Object.getPrototypeOf(t)},$(t)}function Z(t,e,r){return e in t?Object.defineProperty(t,e,{value:r,enumerable:!0,configurable:!0,writable:!0}):t[e]=r,t}var Q=function(t){!function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function");t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),Object.defineProperty(t,"prototype",{writable:!1}),e&&q(t,e)}(u,t);var e,r,n,o,i,a,c=(i=u,a=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],(function(){}))),!0}catch(t){return!1}}(),function(){var t,e=$(i);if(a){var r=$(this).constructor;t=Reflect.construct(e,arguments,r)}else t=e.apply(this,arguments);return H(this,t)});function u(){return V(this,u),c.apply(this,arguments)}return e=u,r=[{key:"render",value:(n=M().mark((function t(e,r){var n,o,i,a=this;return M().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return r?this.element=e:r=e,this.element.setAttribute("data-block",this.id),t.next=4,d.load(u.dependencies);case 4:n=t.sent,o=n.ReactDom.createRoot(this.element),n.React,i=function(){var t,e,o=(t=n.React.useState(r),e=2,function(t){if(Array.isArray(t))return t}(t)||function(t,e){var r=null==t?null:"undefined"!=typeof Symbol&&t[Symbol.iterator]||t["@@iterator"];if(null!=r){var n,o,i=[],a=!0,c=!1;try{for(r=r.call(t);!(a=(n=r.next()).done)&&(i.push(n.value),!e||i.length!==e);a=!0);}catch(t){c=!0,o=t}finally{try{a||null==r.return||r.return()}finally{if(c)throw o}}return i}}(t,e)||function(t,e){if(t){if("string"==typeof t)return B(t,e);var r=Object.prototype.toString.call(t).slice(8,-1);return"Object"===r&&t.constructor&&(r=t.constructor.name),"Map"===r||"Set"===r?Array.from(t):"Arguments"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?B(t,e):void 0}}(t,e)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()),i=o[0],c=o[1];return a.setState=c,n.React.useEffect((function(){window.location.hash==="#".concat(r.hrid)&&a.element.scrollIntoView()}),[]),n.React.createElement(a.block,W(W({},i),{},{parentSelector:"[data-block=".concat(a.id,"]")}))},o.render(n.React.createElement(i,{}));case 9:case"end":return t.stop()}}),t,this)})),o=function(){var t=this,e=arguments;return new Promise((function(r,o){var i=n.apply(t,e);function a(t){K(i,r,o,a,c,"next",t)}function c(t){K(i,r,o,a,c,"throw",t)}a(void 0)}))},function(t,e){return o.apply(this,arguments)})},{key:"updateProps",value:function(t){this.setState(t)}}],r&&Y(e.prototype,r),Object.defineProperty(e,"prototype",{writable:!1}),u}(o);Z(Q,"dependencies",[{name:"react",version:"18",variable:"React"},{name:"react-dom",version:"18",variable:"ReactDom"}]);const J={"react-18":Q};function X(t){return X="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},X(t)}function z(){z=function(){return t};var t={},e=Object.prototype,r=e.hasOwnProperty,n="function"==typeof Symbol?Symbol:{},o=n.iterator||"@@iterator",i=n.asyncIterator||"@@asyncIterator",a=n.toStringTag||"@@toStringTag";function c(t,e,r){return Object.defineProperty(t,e,{value:r,enumerable:!0,configurable:!0,writable:!0}),t[e]}try{c({},"")}catch(t){c=function(t,e,r){return t[e]=r}}function u(t,e,r,n){var o=e&&e.prototype instanceof f?e:f,i=Object.create(o.prototype),a=new O(n||[]);return i._invoke=function(t,e,r){var n="suspendedStart";return function(o,i){if("executing"===n)throw new Error("Generator is already running");if("completed"===n){if("throw"===o)throw i;return{value:void 0,done:!0}}for(r.method=o,r.arg=i;;){var a=r.delegate;if(a){var c=b(a,r);if(c){if(c===l)continue;return c}}if("next"===r.method)r.sent=r._sent=r.arg;else if("throw"===r.method){if("suspendedStart"===n)throw n="completed",r.arg;r.dispatchException(r.arg)}else"return"===r.method&&r.abrupt("return",r.arg);n="executing";var u=s(t,e,r);if("normal"===u.type){if(n=r.done?"completed":"suspendedYield",u.arg===l)continue;return{value:u.arg,done:r.done}}"throw"===u.type&&(n="completed",r.method="throw",r.arg=u.arg)}}}(t,r,a),i}function s(t,e,r){try{return{type:"normal",arg:t.call(e,r)}}catch(t){return{type:"throw",arg:t}}}t.wrap=u;var l={};function f(){}function p(){}function h(){}var y={};c(y,o,(function(){return this}));var d=Object.getPrototypeOf,v=d&&d(d(E([])));v&&v!==e&&r.call(v,o)&&(y=v);var m=h.prototype=f.prototype=Object.create(y);function g(t){["next","throw","return"].forEach((function(e){c(t,e,(function(t){return this._invoke(e,t)}))}))}function w(t,e){function n(o,i,a,c){var u=s(t[o],t,i);if("throw"!==u.type){var l=u.arg,f=l.value;return f&&"object"==X(f)&&r.call(f,"__await")?e.resolve(f.__await).then((function(t){n("next",t,a,c)}),(function(t){n("throw",t,a,c)})):e.resolve(f).then((function(t){l.value=t,a(l)}),(function(t){return n("throw",t,a,c)}))}c(u.arg)}var o;this._invoke=function(t,r){function i(){return new e((function(e,o){n(t,r,e,o)}))}return o=o?o.then(i,i):i()}}function b(t,e){var r=t.iterator[e.method];if(void 0===r){if(e.delegate=null,"throw"===e.method){if(t.iterator.return&&(e.method="return",e.arg=void 0,b(t,e),"throw"===e.method))return l;e.method="throw",e.arg=new TypeError("The iterator does not provide a 'throw' method")}return l}var n=s(r,t.iterator,e.arg);if("throw"===n.type)return e.method="throw",e.arg=n.arg,e.delegate=null,l;var o=n.arg;return o?o.done?(e[t.resultName]=o.value,e.next=t.nextLoc,"return"!==e.method&&(e.method="next",e.arg=void 0),e.delegate=null,l):o:(e.method="throw",e.arg=new TypeError("iterator result is not an object"),e.delegate=null,l)}function _(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function x(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function O(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(_,this),this.reset(!0)}function E(t){if(t){var e=t[o];if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var n=-1,i=function e(){for(;++n<t.length;)if(r.call(t,n))return e.value=t[n],e.done=!1,e;return e.value=void 0,e.done=!0,e};return i.next=i}}return{next:L}}function L(){return{value:void 0,done:!0}}return p.prototype=h,c(m,"constructor",h),c(h,"constructor",p),p.displayName=c(h,a,"GeneratorFunction"),t.isGeneratorFunction=function(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===p||"GeneratorFunction"===(e.displayName||e.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,h):(t.__proto__=h,c(t,a,"GeneratorFunction")),t.prototype=Object.create(m),t},t.awrap=function(t){return{__await:t}},g(w.prototype),c(w.prototype,i,(function(){return this})),t.AsyncIterator=w,t.async=function(e,r,n,o,i){void 0===i&&(i=Promise);var a=new w(u(e,r,n,o),i);return t.isGeneratorFunction(r)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},g(m),c(m,a,"Generator"),c(m,o,(function(){return this})),c(m,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var e=[];for(var r in t)e.push(r);return e.reverse(),function r(){for(;e.length;){var n=e.pop();if(n in t)return r.value=n,r.done=!1,r}return r.done=!0,r}},t.values=E,O.prototype={constructor:O,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(x),!t)for(var e in this)"t"===e.charAt(0)&&r.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var e=this;function n(r,n){return a.type="throw",a.arg=t,e.next=r,n&&(e.method="next",e.arg=void 0),!!n}for(var o=this.tryEntries.length-1;o>=0;--o){var i=this.tryEntries[o],a=i.completion;if("root"===i.tryLoc)return n("end");if(i.tryLoc<=this.prev){var c=r.call(i,"catchLoc"),u=r.call(i,"finallyLoc");if(c&&u){if(this.prev<i.catchLoc)return n(i.catchLoc,!0);if(this.prev<i.finallyLoc)return n(i.finallyLoc)}else if(c){if(this.prev<i.catchLoc)return n(i.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return n(i.finallyLoc)}}}},abrupt:function(t,e){for(var n=this.tryEntries.length-1;n>=0;--n){var o=this.tryEntries[n];if(o.tryLoc<=this.prev&&r.call(o,"finallyLoc")&&this.prev<o.finallyLoc){var i=o;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=e&&e<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=t,a.arg=e,i?(this.method="next",this.next=i.finallyLoc,l):this.complete(a)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),l},finish:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var r=this.tryEntries[e];if(r.finallyLoc===t)return this.complete(r.completion,r.afterLoc),x(r),l}},catch:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var r=this.tryEntries[e];if(r.tryLoc===t){var n=r.completion;if("throw"===n.type){var o=n.arg;x(r)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,e,r){return this.delegate={iterator:E(t),resultName:e,nextLoc:r},"next"===this.method&&(this.arg=void 0),l}},t}function tt(t,e){(null==e||e>t.length)&&(e=t.length);for(var r=0,n=new Array(e);r<e;r++)n[r]=t[r];return n}function et(t,e,r,n,o,i,a){try{var c=t[i](a),u=c.value}catch(t){return void r(t)}c.done?e(u):Promise.resolve(u).then(n,o)}var rt=[];function nt(t,e,r){var n,o=r||document.createElement("div"),i=rt.length?rt[rt.length-1]:null;rt.push(this),this.element=o,this.promise=(n=z().mark((function r(){var n,a,c,u,s,l,f,p,h,y;return z().wrap((function(r){for(;;)switch(r.prev=r.next){case 0:return n="".concat(t,"-v").concat(e.replace(/\./g,"-")),r.next=3,j.get(t,e,nt.baseUrl);case 3:return a=r.sent,c=J[a.renderer],u=d.load(a.dependencies),s=P.Z.load(a.scripts,{dependsOn:u}),l=R.load(a.styles,{scope:'[data-block^="'.concat(n,'"]'),key:"".concat(n,"-*"),dependsOn:u}),f=d.load(c.dependencies),r.next=11,Promise.all([s,u,l,f]);case 11:if(p=r.sent,m=1,h=function(t){if(Array.isArray(t))return t}(v=p)||function(t,e){var r=null==t?null:"undefined"!=typeof Symbol&&t[Symbol.iterator]||t["@@iterator"];if(null!=r){var n,o,i=[],a=!0,c=!1;try{for(r=r.call(t);!(a=(n=r.next()).done)&&(i.push(n.value),!e||i.length!==e);a=!0);}catch(t){c=!0,o=t}finally{try{a||null==r.return||r.return()}finally{if(c)throw o}}return i}}(v,m)||function(t,e){if(t){if("string"==typeof t)return tt(t,e);var r=Object.prototype.toString.call(t).slice(8,-1);return"Object"===r&&t.constructor&&(r=t.constructor.name),"Map"===r||"Set"===r?Array.from(t):"Arguments"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?tt(t,e):void 0}}(v,m)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}(),y=h[0],!nt.renderInOrder||!i){r.next=23;break}return r.prev=15,r.next=18,i.promise;case 18:r.next=23;break;case 20:r.prev=20,r.t0=r.catch(15),console.log("Error loading previousBlock block, rendering next block anyway.");case 23:return r.abrupt("return",new c(o,y,n));case 24:case"end":return r.stop()}var v,m}),r,null,[[15,20]])})),function(){var t=this,e=arguments;return new Promise((function(r,o){var i=n.apply(t,e);function a(t){et(i,r,o,a,c,"next",t)}function c(t){et(i,r,o,a,c,"throw",t)}a(void 0)}))})()}nt.blocks=rt,nt.Manifest=j,nt.Dependency=d;const ot=function(t){var e=t,r=document.querySelector("meta[for=softr-wrapper]");return r&&((0,v.Vp)(r.innerText,{silent:!0,prepend:!0}),r.parentNode.removeChild(r),e=window.__SOFTR_DANGEROUSLY_INJECT__.SoftrBlockWrapper(t)),e}(nt)})(),self.SoftrBlockWrapper=__webpack_exports__.default})();</script>
+        <script>
+            SoftrBlockWrapper.baseUrl = 'https://assets.softr-files.com/softr-blocks/prod/blocks';
+            SoftrBlockWrapper.renderInOrder = true;
+             SoftrBlockWrapper.Manifest.add('header1', '3.1.0', {
+    "version": "1.0",
+    "dependencies": [
+        {
+            "name": "react",
+            "version": "18",
+            "variable": "react18"
+        },
+        {
+            "name": "react-dom",
+            "version": "18",
+            "variable": "react_dom18"
+        }
+    ],
+    "styles": [
+        "https://assets.softr-files.com/softr-blocks/prod/blocks/header1/3.1.0/main.css?t=1698928537053"
+    ],
+    "scripts": {
+        "vendors": [],
+        "main": "https://assets.softr-files.com/softr-blocks/prod/blocks/header1/3.1.0/main.js?t=1698928537053",
+        "type": "var",
+        "export": "default",
+        "name": "renderBlock"
+    },
+    "renderer": "react-18",
+    "hash": "5553a43144988bf1eff8a5d03ee1f5fb"
+}, 'https://assets.softr-files.com/softr-blocks/prod/blocks/header1/3.1.0'); const block_ce06a8eb60874a58b2cea0a4505f68e0 = new SoftrBlockWrapper('header1', '3.1.0'); SoftrBlockWrapper.Manifest.add('hero1', '3.0.2', {
+    "version": "1.0",
+    "dependencies": [
+        {
+            "name": "react",
+            "version": "18",
+            "variable": "react18"
+        }
+    ],
+    "styles": [
+        "https://assets.softr-files.com/softr-blocks/prod/blocks/hero1/3.0.2/main.css?t=1698142641081"
+    ],
+    "scripts": {
+        "vendors": [],
+        "main": "https://assets.softr-files.com/softr-blocks/prod/blocks/hero1/3.0.2/main.js?t=1698142641081",
+        "type": "var",
+        "export": "default",
+        "name": "renderBlock"
+    },
+    "renderer": "react-18",
+    "hash": "65cfbb71f4e410f1db33b728a501ce1b"
+}, 'https://assets.softr-files.com/softr-blocks/prod/blocks/hero1/3.0.2'); const block_4fa559486d684cb584932d7767983b88 = new SoftrBlockWrapper('hero1', '3.0.2'); SoftrBlockWrapper.Manifest.add('cta2', '3.1.1', {
+    "version": "1.0",
+    "dependencies": [
+        {
+            "name": "react",
+            "version": "18",
+            "variable": "react18"
+        }
+    ],
+    "styles": [
+        "https://assets.softr-files.com/softr-blocks/prod/blocks/cta2/3.1.1/main.css?t=1686647935147"
+    ],
+    "scripts": {
+        "vendors": [],
+        "main": "https://assets.softr-files.com/softr-blocks/prod/blocks/cta2/3.1.1/main.js?t=1686647935147",
+        "type": "var",
+        "export": "default",
+        "name": "renderBlock"
+    },
+    "renderer": "react-18",
+    "hash": "271869083d9e532c6741b091cd4c0673"
+}, 'https://assets.softr-files.com/softr-blocks/prod/blocks/cta2/3.1.1'); const block_ffa8de924d014688b3fa1b1a5409e55b = new SoftrBlockWrapper('cta2', '3.1.1'); SoftrBlockWrapper.Manifest.add('feature-grid2', '3.1.1', {
+    "version": "1.0",
+    "dependencies": [
+        {
+            "name": "react",
+            "version": "18",
+            "variable": "react18"
+        }
+    ],
+    "styles": [
+        "https://assets.softr-files.com/softr-blocks/prod/blocks/feature-grid2/3.1.1/main.css?t=1698142641064"
+    ],
+    "scripts": {
+        "vendors": [],
+        "main": "https://assets.softr-files.com/softr-blocks/prod/blocks/feature-grid2/3.1.1/main.js?t=1698142641064",
+        "type": "var",
+        "export": "default",
+        "name": "renderBlock"
+    },
+    "renderer": "react-18",
+    "hash": "115d2bee0c80e5a6ef45d35a4c7954f5"
+}, 'https://assets.softr-files.com/softr-blocks/prod/blocks/feature-grid2/3.1.1'); const block_4b533c4c7fa7443bbf7274257d15fff3 = new SoftrBlockWrapper('feature-grid2', '3.1.1'); SoftrBlockWrapper.Manifest.add('form3', '3.6.0', {
+    "version": "1.0",
+    "dependencies": [
+        {
+            "name": "react",
+            "version": "18",
+            "variable": "react18"
+        },
+        {
+            "name": "react-dom",
+            "version": "18",
+            "variable": "react_dom18"
+        }
+    ],
+    "styles": [
+        "https://assets.softr-files.com/softr-blocks/prod/blocks/form3/3.6.0/main.css?t=1699629044821"
+    ],
+    "scripts": {
+        "vendors": [],
+        "main": "https://assets.softr-files.com/softr-blocks/prod/blocks/form3/3.6.0/main.js?t=1699629044821",
+        "type": "var",
+        "export": "default",
+        "name": "renderBlock"
+    },
+    "renderer": "react-18",
+    "hash": "6ea05e668e0aefa535d5146b93d5556b"
+}, 'https://assets.softr-files.com/softr-blocks/prod/blocks/form3/3.6.0'); const block_365b3937a6cd4132a11d5ec73095cc98 = new SoftrBlockWrapper('form3', '3.6.0'); SoftrBlockWrapper.Manifest.add('footer3', '3.1.0', {
+    "version": "1.0",
+    "dependencies": [
+        {
+            "name": "react",
+            "version": "18",
+            "variable": "react18"
+        }
+    ],
+    "styles": [
+        "https://assets.softr-files.com/softr-blocks/prod/blocks/footer3/3.1.0/main.css?t=1698142640944"
+    ],
+    "scripts": {
+        "vendors": [],
+        "main": "https://assets.softr-files.com/softr-blocks/prod/blocks/footer3/3.1.0/main.js?t=1698142640944",
+        "type": "var",
+        "export": "default",
+        "name": "renderBlock"
+    },
+    "renderer": "react-18",
+    "hash": "943772484e22633826976d1b6b28eb96"
+}, 'https://assets.softr-files.com/softr-blocks/prod/blocks/footer3/3.1.0'); const block_021fe34b800a409c9821587991fd3a03 = new SoftrBlockWrapper('footer3', '3.1.0');
+        </script>
+
+<meta name="twitter:title" content="Portafolio de Santiago Ortega"><meta property="twitter:title" content="Portafolio de Santiago Ortega"><meta property="og:title" content="Portafolio de Santiago Ortega">
+<meta name="twitter:description" content="Portafolio de Santiago Ortega"><meta property="twitter:description" content="Portafolio de Santiago Ortega"><meta property="og:description" content="Portafolio de Santiago Ortega">
+
+
+<title>Portafolio</title>
+<meta name="description" content="Portafolio de Santiago Ortega">
+
+
+<link rel="icon" type="image/x-icon" href="https://softr-prod.imgix.net/applications/6278398e-1387-40a0-a1c1-1db1673d2061/assets/de77878a-431c-404a-b5c3-101093aaa882.png?rnd=1700174566262"/>
+
+
+<link rel="canonical" href="https://santiago-ortega.softr.app/" />
+<link href="https://fonts.softr-files.com/google/api/css?family=B612+Mono:400,400i,700,700i&display=swap" rel="stylesheet"><link href="https://fonts.softr-files.com/google/api/css?family=Fredoka:300,400,500,600,700&display=swap" rel="stylesheet"><link href="https://fonts.softr-files.com/google/api/css?family=Inter:100,200,300,500,600,600,700,800,900,400&display=swap" rel="stylesheet">
+
+<link href="https://assets.softr-files.com/libs/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://assets.softr-files.com/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+
+<style type="text/css">
+
+    html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    @media (min-width: 576px) {
+        .container {
+            max-width: 540px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .navbar-brand img {
+            max-width: 15rem !important;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            max-width: 720px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .container {
+            max-width: 960px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1140px;
+        }
+    }
+
+    p, h1, h2, h3, h4, h5, small {
+        white-space: pre-line;
+    }
+
+    @media screen and (max-width: 768px) {
+        input, select, textarea {
+            font-size: 16px !important;
+        }
+    }
+
+    h1.sw-font-family-default,
+    h2.sw-font-family-default,
+    h3.sw-font-family-default {
+        font-family: "Inter";
+    }
+
+    h1.sw-font-weight-default,
+    h2.sw-font-weight-default,
+    h3.sw-font-family-default {
+        font-weight: 600;
+    }
+
+    h1.sw-text-color-default,
+    h2.sw-text-color-default,
+    h3.sw-font-family-default {
+        color: #383B3D;
+    }
+
+    section.sw-font-family-default,
+    header.sw-font-family-default,
+    nav.sw-font-family-default,
+    footer.sw-font-family-default,
+    div.sw-font-family-default,
+    span.sw-font-family-default,
+    small.sw-font-family-default,
+    pre.sw-font-family-default,
+    p.sw-font-family-default,
+    b.sw-font-family-default,
+    li.sw-font-family-default,
+    ul.sw-font-family-default,
+    a.sw-font-family-default,
+    h4.sw-font-family-default,
+    h5.sw-font-family-default,
+    h6.sw-font-family-default {
+        font-family: "Inter";
+    }
+
+    span.sw-font-weight-default,
+    li.sw-font-weight-default span,
+    small.sw-font-weight-default,
+    li.sw-font-weight-default small,
+    pre.sw-font-weight-default,
+    p.sw-font-weight-default,
+    h4.sw-font-weight-default,
+    h5.sw-font-weight-default,
+    h6.sw-font-weight-default {
+        font-weight: 300;
+    }
+
+    span.sw-text-color-default,
+    li.sw-text-color-default span,
+    small.sw-text-color-default,
+    li.sw-text-color-default small,
+    pre.sw-text-color-default,
+    p.sw-text-color-default,
+    div.sw-text-color-default,
+    h4.sw-text-color-default,
+    h5.sw-text-color-default,
+    h6.sw-text-color-default {
+        color: #383B3D;
+    }
+
+    input.sw-font-family-default,
+    textarea.sw-font-family-default {
+        font-family: "Inter";
+    }
+
+    input.sw-font-weight-default,
+    textarea.sw-font-weight-default {
+        font-weight: 300;
+    }
+
+    .sw-font-family-default::-webkit-input-placeholder,
+    .sw-font-family-default::-moz-placeholder,
+    .sw-font-family-default:-ms-input-placeholder,
+    .sw-font-family-default:-moz-placeholder {
+        font-family: "Inter";
+    }
+
+    .sw-font-family-default::-webkit-input-placeholder,
+    .sw-font-family-default::-moz-placeholder,
+    .sw-font-family-default:-ms-input-placeholder,
+    .sw-font-family-default:-moz-placeholder {
+        font-weight: 300;
+    }
+
+    .sw-text-color-default[data-element='button'] {
+        color: #ffffff;
+    }
+
+    .sw-background-color-default[data-element='button'] {
+        background-color: #212121;
+    }
+
+    .sw-border-radius-default[data-element='button'] {
+        border-radius: .5rem;
+    }
+
+    /* Micromodal styles */
+    .sw-modal {
+        display: none;
+    }
+
+    .sw-modal.is-open {
+        display: block;
+    }
+
+    .sw-modal .sw-modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    .sw-modal .sw-modal-container {
+        background-color: #FFFFFF;
+        padding: 40px 10px 10px 10px;
+        overflow-y: auto;
+        box-sizing: border-box;
+        position: relative;
+        margin: auto;
+        border-radius: 16px;
+    }
+
+    .sw-modal #sw-modal-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sw-modal .sw-modal-close {
+        background: transparent;
+        border: 0;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    .sw-modal-close:focus {
+        outline: none;
+    }
+
+    .sw-modal .sw-modal-iframe {
+        border: none;
+    }
+
+    .sw-modal-size-sm {
+        width: 464px;
+        height: 350px;
+        max-width: 95vw;
+        max-height: 95vh;
+    }
+
+
+    .sw-modal-size-md {
+        width: 755px;
+        height: 600px;
+        max-width: 95vw;
+        max-height: 95vh;
+    }
+
+    .sw-modal-size-lg {
+        width: 1196px;
+        height: 780px;
+        max-width: 95vw;
+        max-height: 95vh;
+    }
+
+    .sw-modal-size-xl {
+        width: 95vw;
+        height: 95vh;
+    }
+
+    .sw-modal-container > div, #sw-modal-content, #sw-modal-content iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sw-modal-close:before {
+        content: "\2715";
+    }
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(359deg);
+        }
+    }
+
+    
+</style>
+
+<link href="https://fonts.softr-files.com/google/api/css?family=Nunito+Sans:600&display=swap" rel="stylesheet">
+<style>
+    .made-with-softr {
+        position: fixed;
+        z-index: 9999999;
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .made-with-softr a {
+        width: 125px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        box-shadow: 0 0 4px rgb(0 0 0 / 15%);
+        border-radius: 4px;
+        z-index: 9999999;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 8px;
+        color: #1f2b3f;
+        background: #ffffff;
+        box-sizing: content-box;
+        text-decoration: none;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    .made-with-softr a .made-with {
+        margin-left: 2px;
+    }
+
+    .made-with-softr a img {
+        width: 16px;
+    }
+
+    .made-with-softr .softr-word {
+        color: #3b85db;
+    }
+
+    .made-with-softr .dark-theme {
+        color: #ffffff;
+        background: #1f2b3f;
+    }
+
+    .made-with-softr .dark-theme .softr-word {
+        color: #ffb30b;
+    }
+</style>
+
+
+<!-- App Integrations -->
+
+<!-- End Integrations -->
+
+
+
+<script>window['application_context'] = {}; window['application_context']['policies'] ={"numberOfSupportedCollaborators":5,"numberOfSupportedDomains":1,"canDisableSoftrBranding":false,"hasSoftrBrandingFooterBoundSupport":false,"numberOfDatasourceRecordsPerTable":1000,"numberOfInternalUsers":5,"numberOfExternalUsers":100,"supportedNumberOfMembershipUsers":100,"hasSignInWithEmailCode":false,"hasSignInWithSMSCode":false,"hasGoogleAuthenticationSupport":true,"hasSamlAuthenticationSupport":false,"hasOpenIdAuthenticationSupport":false,"hasUserLastSeenSupport":false,"hasMapSupport":true,"hasTableSupport":true,"hasCalendarSupport":false,"hasInboxBlockSupport":false,"hasKanbanSupport":false,"hasChartsSupport":false,"hasOrgChartBlockSupport":false,"hasTimelineBlockSupport":false,"numberOfDaysApplicationHistory":7,"hasCustomCodeSupport":false,"hasEmbedBlockSupport":false,"hasTransferApplicationsAcrossWorkspace":false,"hasPwaSupport":false,"hasSignatureFieldSupport":false,"hasTransferOwnershipSupport":null,"hasEditAirtableRecordsSupport":false,"hasMultiGroupEditAirtableRecordsSupport":false}; </script>
+
+<!-- App Custom Header Code -->
+<style>
+ .sw-font-size-5xl {
+    font-size: 3rem;
+  }
+  .sw-font-size-4xl {
+    font-size: 2.25rem;
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    if($(window).width() < 768) {
+       $('h1.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('h1.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('h1.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('h1.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('h1.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+       $('h2.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('h2.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('h2.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('h2.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('h2.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+       $('div.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('div.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('div.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('div.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('div.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+       $('p.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('p.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('p.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('p.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('p.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+       $('span.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('span.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('span.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('span.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('span.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+    }
+  });
+</script>
+<!-- End App Custom Header Code -->
+
+<!-- Page Custom Header Code -->
+
+<!-- End Page Custom Header Code -->
+
+<script>window['is401Page'] = false; </script>
+
+
+<script>
+    /** Image lineup on mobile **/
+    document.addEventListener("DOMContentLoaded", function () {
+        function changeImageDirectionsOnMobile() {
+
+            const classListSection = $('body>div>section')?.attr('class')?.split(/\s+/);
+            const textClassSection = classListSection?.find(cls => cls.startsWith('feature'));
+
+            const classListHeader = $('body>div>header')?.attr('class')?.split(/\s+/);
+            const textClassHeader = classListHeader?.find(cls => cls.startsWith('hero'));
+
+            /*If FEATURE block*/
+            if (textClassSection) {
+                findRowsWidthImageAndReverse(textClassSection)
+            }
+
+            /*If HERO block*/
+            if (textClassHeader) {
+                findRowsWidthImageAndReverse(textClassHeader)
+            }
+        }
+
+        function findRowsWidthImageAndReverse(textClass) {
+            const rowsWithImages = $('.' + textClass + ' .row.align-items-center').has('img').toArray();
+            const rowsWithLeftSideImages = rowsWithImages.filter(row => {
+                return $(row).children().first().children().first().prop("tagName") === 'IMG';
+            });
+
+
+            rowsWithLeftSideImages.forEach(row => {
+                if ($(window).width() <= 768) {
+                    row.classList.add('flex-column-reverse')
+                }
+            });
+        }
+
+        if ($(window).width() <= 768) {
+            changeImageDirectionsOnMobile();
+        }
+    });
+
+    /** BG Size on mobile **/
+    document.addEventListener("DOMContentLoaded", function () {
+        if ($(window).width() <= 768) {
+            var element = $('section.sw-background-size-auto, header.sw-background-size-auto');
+            element.removeClass('sw-background-size-auto');
+            element.css('background-size', 'cover');
+
+            $('section.sw-background-attachment-fixed, header.sw-background-attachment-fixed').removeClass('sw-background-attachment-fixed');
+        }
+    });
+
+    /** Disable zoom on mobile **/
+    document.addEventListener("DOMContentLoaded", function () {
+        if ($(window).width() <= 768) {
+            $('input.sw-font-size-s').removeClass('sw-font-size-s');
+            $('textarea.sw-font-size-s').removeClass('sw-font-size-s');
+            $('select.sw-font-size-s').removeClass('sw-font-size-s');
+        }
+    });
+
+    window.addEventListener('user-sign-out', (e) => {
+        const message = {
+            name: 'user-sign-out-triggered',
+        };
+
+        window.parent.postMessage(message, '*');
+    });
+
+</script>
+</head>
+
+<body>
+
+
+<div data-appid="6278398e-1387-40a0-a1c1-1db1673d2061" data-pageId="b1e4fb44-c016-447e-ab33-e59a7610141a" data-workspaceid="7ea81302-bc9b-4141-ac1f-2a270f6d85c8" data-paymentplan="" class="content">
+    <div id="home-header4" class="block-ce06a8eb-6087-4a58-b2ce-a0a4505f68e0" category="Header"></div><div id="hero1" class="block-4fa55948-6d68-4cb5-8493-2d7767983b88" category="Hero"></div><div id="cta1" class="block-ffa8de92-4d01-4688-b3fa-1b1a5409e55b" category="CTA"></div><div id="feature-grid2" class="block-4b533c4c-7fa7-443b-bf72-74257d15fff3" category="Feature Grid"></div><div id="form1" class="block-365b3937-a6cd-4132-a11d-5ec73095cc98" category="Form"></div><div id="home-footer1" class="block-021fe34b-800a-409c-9821-587991fd3a03" category="Footer"></div>
+</div>
+
+<script>
+
+    function rgb2hex(orig) {
+        var rgb = orig.replace(/\s/g, "").match(/^rgba?\((\d+),(\d+),(\d+)/i);
+        return rgb && rgb.length === 4
+            ? "#" +
+            ("0" + parseInt(rgb[1], 10).toString(16)).slice(-2) +
+            ("0" + parseInt(rgb[2], 10).toString(16)).slice(-2) +
+            ("0" + parseInt(rgb[3], 10).toString(16)).slice(-2)
+            : orig;
+    }
+
+    function lightOrDark(color) {
+        // Variables for red, green, blue values
+        var r, g, b, hsp;
+
+        // Check the format of the color, HEX or RGB?
+        if (color.match(/^rgb/)) {
+            // If RGB --> store the red, green, blue values in separate variables
+            color = color.match(
+                /^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)$/
+            );
+
+            r = color[1];
+            g = color[2];
+            b = color[3];
+        } else {
+            // If hex --> Convert it to RGB: http://gist.github.com/983661
+            color = +(
+                "0x" + color.slice(1).replace(color.length < 5 && /./g, "$&$&")
+            );
+
+            r = color >> 16;
+            g = (color >> 8) & 255;
+            b = color & 255;
+        }
+
+        // HSP (Highly Sensitive Poo) equation from http://alienryderflex.com/hsp.html
+        hsp = Math.sqrt(0.299 * (r * r) + 0.587 * (g * g) + 0.114 * (b * b));
+
+        // Using the HSP value, determine whether the color is light or dark
+        if (hsp > 127.5) {
+            return "light";
+        } else {
+            return "dark";
+        }
+    }
+
+
+    
+    </script>
+
+<!-- Stick footer to the bottom if the App is shorter than the viewport -->
+<script>
+    (() => {
+        const allBlocks = document.querySelector('[data-appid]').children;
+        let blocksCountToProcess = allBlocks.length;
+        let appHeight = 0;
+        let last = allBlocks[allBlocks.length - 1];
+        let prelast = blocksCountToProcess >= 2 ? allBlocks[allBlocks.length - 2] : allBlocks[allBlocks.length - 1];
+
+        // in case of last child is not a block but SOFTR-BRANDING DIV
+        if(last && last.classList.contains('softr-branding')) {
+            if(blocksCountToProcess > 2) {
+                last = allBlocks[allBlocks.length - 2];
+                prelast = allBlocks[allBlocks.length - 3];
+            }
+        }
+
+        function calculateAppHeightAndStickFooterToTheBottom() {
+            [...allBlocks].forEach((block) => {
+                let blockHrId = block.getAttribute('id');
+                if (isReactBlock(block)) {
+                    // react blocks size will be changed, need to wait
+                    // mark block as processed
+                    window.addEventListener('block-loaded-' + blockHrId, function () {
+                        setTimeout(() => {
+                            blocksCountToProcess -= 1;
+                            if(!isVerticalHeader(block)){
+                                appHeight += block.offsetHeight;
+                            }
+                            stickFooterToTheBottom();
+                        }, 90);
+                    });
+                } else { // non-rect blocks size can be calculated here
+                    blocksCountToProcess -= 1;
+                    if(!isVerticalHeader(block)){
+                        appHeight += block.offsetHeight;
+                    }
+                }
+                stickFooterToTheBottom();
+            });
+        }
+
+        function stickFooterToTheBottom() {
+            // if not all blocks size is calculated, wait
+            if (blocksCountToProcess !== 0) {
+                return;
+            }
+
+            // in case of method works after resize, we need to remove old DIV
+            let extraDiv = document.querySelector('.extra-div');
+            if (extraDiv) {
+                extraDiv.remove();
+            }
+
+            // if app height is bigger then window, no need to push footer down, as it's already there
+            if (appHeight > window.innerHeight) {
+                return;
+            }
+
+            if(last){
+                let dataBlockAttribute = last.getAttribute('data-block');
+                if(!dataBlockAttribute) {
+                    return;
+                }
+                let lastBlockType = dataBlockAttribute.slice(0, 6);
+                // if there no footer, nothing to do
+                if (lastBlockType !== 'footer') {
+                    return;
+                }
+            }
+
+            const divEl = document.createElement("div");
+            divEl.setAttribute("class", "extra-div");
+            if(prelast.firstChild){
+                divEl.style.background = window.getComputedStyle(isReactBlock(prelast) ? prelast.firstChild : prelast).getPropertyValue("background-color");
+            }
+            // calculate size for dummy div
+            divEl.style.height = (window.innerHeight - appHeight) + 'px';
+            divEl.style.width = '100%';
+
+            document.querySelector('[data-appid]').insertBefore(divEl, last);
+        }
+
+        function isVerticalHeader (block){
+            //react vertical header structure is:  div > div
+            //react horizontal header structure is:  div > header
+            //non react vertical header structure is:  div > nav
+            //non react horizontal header structure is:  nav
+            if(block.hasAttribute('category')){
+                if (block.getAttribute('category') !== 'Header'){
+                    return false;
+                }
+            }
+            if (block.tagName.toLowerCase() === 'nav'){
+                return false;
+            }
+
+            if(block.tagName.toLowerCase() === 'section') {
+                return false;
+            }
+
+            let firstElementChild = block.firstElementChild;
+            return firstElementChild && (firstElementChild.tagName.toLowerCase() === 'div' || firstElementChild.tagName.toLowerCase() === 'nav');
+        }
+
+        function isReactBlock (block) {
+            return block.tagName.toLowerCase() === 'div';
+        }
+
+        calculateAppHeightAndStickFooterToTheBottom();
+
+        // after resize check if footer needs to be moved down
+        window.addEventListener('resize', () => {
+            stickFooterToTheBottom();
+        });
+
+
+    })();
+</script>
+
+
+
+
+<!-- Scripts -->
+<script src="https://assets.softr-files.com/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://assets.softr-files.com/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://assets.softr-files.com/libs/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://assets.softr-files.com/libs/micromodal/0.4.10/micromodal.min.js"></script>
+
+<script>
+    /** this function is called from list blocks (do not delete) **/
+    function openSwModal(url, size) {
+        MicroModal.init({
+            disableScroll: true,
+            awaitOpenAnimation: true,
+            awaitCloseAnimation: true
+        });
+
+        MicroModal.show("sw-modal");
+
+        const modalElem = document.querySelector('#sw-modal-content');
+        let loadingElem = modalElem.querySelector('.sw-modal-loading');
+
+        if (!loadingElem) {
+            modalElem.innerHTML += `<i class="sw-modal-loading fas fa-sync"></i>`;
+            loadingElem = modalElem.querySelector('.sw-modal-loading');
+            loadingElem.style.animation = 'rotation 900ms infinite linear';
+            loadingElem.style.position = 'absolute';
+        } else {
+            loadingElem?.remove();
+        }
+
+        const iframeElem = document.querySelector(".sw-modal-iframe");
+        const modalContainer = document.querySelector(".sw-modal-container");
+
+        iframeElem.onload = function () {
+            loadingElem?.remove();
+        };
+
+        const viewModeParam = "viewMode=modal";
+        const urlIsLocal = url.startsWith('#') || url.startsWith('/') || url.startsWith(window.location.origin);
+        const modalUrl = urlIsLocal ? (url.indexOf("?") !== -1 ? url + "&" + viewModeParam : url + "?" + viewModeParam) : url;
+        iframeElem.setAttribute("src", modalUrl);
+
+        modalContainer.classList.remove('sw-modal-size-sm', 'sw-modal-size-md', 'sw-modal-size-lg', 'sw-modal-size-xl');
+        modalContainer.classList.add('sw-modal-size-' + size);
+
+        setTimeout(() => {
+            // Add event listener to detect when the modal is closed
+            const closeButton = document.querySelector('.sw-modal-close');
+            const backdrop = document.querySelector('.sw-modal-overlay');
+
+            closeButton.addEventListener('click', resetIframe);
+            backdrop.addEventListener('click', resetIframe);
+        }, 1000)
+
+    }
+
+    const resetIframe = () => {
+        const iframeElem = document.querySelector('.sw-modal-iframe');
+        iframeElem.removeAttribute('src');
+    }
+</script>
+
+<script>
+    /** Bugfix on multiple ?recordId= issue **/
+    setInterval(function () {
+        $('section a').each(function () {
+            const href = $(this).attr('href');
+            if (href && href.includes('?recordId=')) {
+                const countOfRecords = (href.match(/\?recordId=/g) || []).length;
+                if (countOfRecords > 1) {
+                    const index = href.lastIndexOf('?recordId=');
+                    const cleanedHref = href.substring(0, index);
+                    $(this).attr('href', cleanedHref);
+                }
+            }
+        });
+    }, 1000);
+</script>
+
+<script type="text/javascript">
+    if (window.jQuery && window.jQuery.ajaxSetup) {
+        window.jQuery.ajaxSetup({
+            beforeSend: function (xhr, settings) {
+                if (settings && settings.url && (
+                    settings.url.includes('/integrations/airtable/')
+                    || settings.url.includes('/v1/applications/6278398e-1387-40a0-a1c1-1db1673d2061')
+                    || settings.url.includes('/v1/comments')
+                    || settings.url.includes('/forms/form-to-email'))
+                ) {
+                    xhr.setRequestHeader('softr-page-id', 'b1e4fb44-c016-447e-ab33-e59a7610141a');
+                }
+            }
+        });
+    }
+
+    window['home-header4'] = {}; window['hero1'] = {}; window['cta1'] = {}; window['feature-grid2'] = {}; window['form1'] = {}; window['home-footer1'] = {}; 
+    const block_ce06a8eb60874a58b2cea0a4505f68e0_defJson = {"id":"ce06a8eb-6087-4a58-b2ce-a0a4505f68e0","version":"3.1.0","hrid":"home-header4","name":"header1","title":"Header with sublinks and button","image":"https://softr-assets-eu-shared.s3.eu-central-1.amazonaws.com/studio/blocks/assets/header1.png","category":"Header","keywords":"header, simple, nav bar, navigation panel, sublinks, sub menu","elements":{"definitions":{"link":{"tag":"a","type":"link","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-424242"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"value":"Link name","action":{"type":"navigate","options":{"url":{"destination":"","target":""},"modalOptions":{"modalSize":"md"}}}},"profileLink":{"link":{"tag":"a","type":"link","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-424242"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"value":"Link name","action":{"type":"navigate","options":{"url":{"destination":"","target":""},"modalOptions":{"modalSize":"md"}}}},"icon":{"tag":"i","type":"icon","primaryStyles":[{"name":"size-color","label":"Icon Size/Color","isPrimary":true,"showFor":"icon","classes":["sw-font-size-m","sw-text-color-EAB10B"]},{"name":"width","label":"Icon Size","isPrimary":true,"showFor":"image","classes":["sw-width-11xs"]}],"provider":"font-awesome","value":"fas  fa-shield-alt","src":""}},"compositeLink":{"link":{"tag":"a","type":"link","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-424242"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"value":"Link name","action":{"type":"navigate","options":{"url":{"destination":"","target":""},"modalOptions":{"modalSize":"md"}}}},"subLinks":{"type":"array","item_type":"#/elements/definitions/link","items":[]}},"button":{"tag":"a","type":"button","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-default"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"border-radius","label":"Roundness","isPrimary":true,"classes":["sw-border-radius-default"]},{"name":"background-color","label":"Background color","isPrimary":true,"classes":["sw-background-color-default"]},{"name":"padding-left-right","label":"Padding left/right","isPrimary":true,"classes":["sw-padding-left-4xs","sw-padding-right-4xs"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-6xs","sw-padding-bottom-6xs"]},{"name":"border","label":"Border","isPrimary":true,"classes":["sw-border-style-none","sw-border-width-xs","sw-border-color-000000"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"label":"Button label","action":{"type":"navigate","options":{"url":{"destination":"","target":""},"modalOptions":{"modalSize":"md"}}}}},"sticky":false,"profileEnabled":false,"verticalEnabled":false,"container":{"tag":"nav","type":"container","primaryStyles":[{"name":"background-color","label":"Background color","isPrimary":true,"classes":["sw-background-color-0a192f"]},{"name":"padding-top","label":"Padding top","isPrimary":true,"classes":["sw-padding-top-5xs"]},{"name":"padding-bottom","label":"Padding bottom","isPrimary":true,"classes":["sw-padding-bottom-5xs"]},{"name":"border-top","label":"Border top","isPrimary":true,"classes":["sw-border-top-style-none","sw-border-top-width-xs","sw-border-top-color-000000"]},{"name":"border-bottom","label":"Border bottom","isPrimary":true,"classes":["sw-border-bottom-style-none","sw-border-bottom-width-xs","sw-border-bottom-color-000000"]}]},"logo":{"tag":"img","type":"image-with-link","primaryStyles":[{"name":"width","label":"Width","isPrimary":true,"classes":["sw-width-9xs"]}],"src":"https://softr-prod.imgix.net/applications/6278398e-1387-40a0-a1c1-1db1673d2061/assets/065e3054-8abe-48a0-a815-991dcf240bae.png","alt":""},"links":{"type":"array","item_type":"#/elements/definitions/compositeLink","items":[{"link":{"tag":"a","type":"link","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-ccd6f6"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"value":"Conóceme","action":{"type":"navigate","options":{"url":{"destination":"/#cta1","target":""},"modalOptions":{"modalSize":"md"}},"action":"Scroll to section > Home/#cta1"}},"subLinks":{"type":"array","item_type":"#/elements/definitions/link","items":[]}},{"link":{"tag":"a","type":"link","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-ccd6f6"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"value":"Mis proyectos","action":{"type":"navigate","options":{"url":{"destination":"/#feature-grid2","target":""},"modalOptions":{"modalSize":"md"}},"modalOptions":{"modalSize":"md"},"action":"Scroll to section > Home/#feature-grid2"}},"subLinks":{"type":"array","item_type":"#/elements/definitions/link","items":[]}}]},"buttons":{"type":"array","item_type":"#/elements/definitions/button","items":[{"tag":"a","type":"button","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-64ffda"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"border-radius","label":"Roundness","isPrimary":true,"classes":["sw-border-radius-none"]},{"name":"background-color","label":"Background color","isPrimary":true,"classes":["sw-background-color-0a192f"]},{"name":"padding-left-right","label":"Padding left/right","isPrimary":true,"classes":["sw-padding-left-4xs","sw-padding-right-4xs"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-6xs","sw-padding-bottom-6xs"]},{"name":"border","label":"Border","isPrimary":true,"classes":["sw-border-style-solid","sw-border-width-xs","sw-border-color-64ffda"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"label":"Escribeme","action":{"type":"navigate","options":{"url":{"destination":"/#form1","target":""},"modalOptions":{"modalSize":"md"}},"action":"Scroll to section > Home/#form1"}}]},"profileLinks":{"type":"array","item_type":"#/elements/definitions/profileLink","items":[{"link":{"tag":"a","type":"link","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-424242"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"value":"Sign Out","action":{"type":"navigate","options":{"url":{"destination":"action:signout","target":""},"modalOptions":{"modalSize":"md"}},"action":"Sign Out"}},"icon":{"tag":"i","type":"icon","primaryStyles":[{"name":"size-color","label":"Icon Size/Color","isPrimary":true,"showFor":"icon","classes":["sw-font-size-m","sw-text-color-EAB10B"]},{"name":"width","label":"Icon Size","isPrimary":true,"showFor":"image","classes":["sw-width-11xs"]}],"provider":"font-awesome","value":"fas fa-power-off","src":""}}]},"modalSizeOptions":[{"className":"sw-letter-s","key":"sm"},{"className":"sw-letter-m","key":"md"},{"className":"sw-letter-l","key":"lg"},{"className":"sw-letter-xl","key":"xl"}]},"type":"static","collection":null,"enabled":"true","order":"null","created_at":"2023-11-16T00:18:15.406513318","updated":[],"permissions":{"EDIT":{"predefinedUserGroupType":null,"customUserGroupIds":[],"enabledPredefinedUserGroupTypes":["ALL_USERS","LOGGED_IN_USERS","NON_LOGGED_IN_USERS"]},"VIEW":{"predefinedUserGroupType":"NON_LOGGED_IN_USERS","customUserGroupIds":[],"enabledPredefinedUserGroupTypes":["ALL_USERS","LOGGED_IN_USERS","NON_LOGGED_IN_USERS"]}}};block_ce06a8eb60874a58b2cea0a4505f68e0_defJson['defaultTheme'] = reactDefaultThemes;block_ce06a8eb60874a58b2cea0a4505f68e0_defJson['settings'] = {};block_ce06a8eb60874a58b2cea0a4505f68e0.promise.then((block) => {block.render(document.getElementsByClassName('block-ce06a8eb-6087-4a58-b2ce-a0a4505f68e0')[0], block_ce06a8eb60874a58b2cea0a4505f68e0_defJson).catch((error) => {console.error(error);});});const block_4fa559486d684cb584932d7767983b88_defJson = {"id":"4fa55948-6d68-4cb5-8493-2d7767983b88","version":"3.0.2","hrid":"hero1","name":"hero1","title":"Hero with call to action","image":"https://softr-assets-eu-shared.s3.eu-central-1.amazonaws.com/studio/blocks/assets/hero1.png","category":"Hero","keywords":"hero, simple, CTA Hero","elements":{"imagePosition":["LEFT","RIGHT","TOP","BOTTOM"],"selectedImagePosition":"RIGHT","definitions":{"button":{"tag":"a","type":"button","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-default"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"border-radius","label":"Roundness","isPrimary":true,"classes":["sw-border-radius-l"]},{"name":"background-color","label":"Background color","isPrimary":true,"classes":["sw-background-color-default"]},{"name":"padding-left-right","label":"Padding left/right","isPrimary":true,"classes":["sw-padding-left-2xs","sw-padding-right-2xs"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-5xs","sw-padding-bottom-5xs"]},{"name":"border","label":"Border","isPrimary":true,"classes":["sw-border-style-none","sw-border-width-xs","sw-border-color-000000"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"label":"Button label","action":{"type":"navigate","options":{"url":{"destination":"","target":""},"modalOptions":{"modalSize":"md","modalType":"center"},"isModelTypeEnabled":true}}}},"container":{"tag":"header","type":"container","primaryStyles":[{"name":"background-color","label":"Background color","isPrimary":true,"classes":["sw-background-color-0a192f"]},{"name":"padding-top","label":"Padding top","isPrimary":true,"classes":["sw-padding-top-4xl"]},{"name":"padding-bottom","label":"Padding bottom","isPrimary":true,"classes":["sw-padding-bottom-xl"]},{"name":"border-top","label":"Border top","isPrimary":true,"classes":["sw-border-top-style-none","sw-border-top-width-xs","sw-border-top-color-000000"]},{"name":"border-bottom","label":"Border bottom","isPrimary":true,"classes":["sw-border-bottom-style-none","sw-border-bottom-width-xs","sw-border-bottom-color-000000"]}]},"header":{"htmlTag":"h1","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-64ffda"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-b612_mono"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-default"]},{"name":"padding-top","label":"Padding top","isPrimary":true,"classes":["sw-padding-top-none"]},{"name":"padding-bottom","label":"Padding bottom","isPrimary":true,"classes":["sw-padding-bottom-2xs"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]},{"name":"line-height","label":"Line height","isPrimary":true,"classes":["sw-line-height-normal"]}],"value":"<p style=\"font-size: 25px; color: ccd6f6; font-family: 'B612 Mono';\">Hola, soy</p><p style=\"font-size: 60px; color: #ccd6f6; font-family: 'B612 MONO';\">Santiago Ortega</p>"},"text":{"tag":"p","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-2xl","sw-text-color-8892b0"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-semibold"]},{"name":"padding-top","label":"Padding top","isPrimary":true,"classes":["sw-padding-top-none"]},{"name":"padding-bottom","label":"Padding bottom","isPrimary":true,"classes":["sw-padding-bottom-xs"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]},{"name":"line-height","label":"Line height","isPrimary":true,"classes":["sw-line-height-normal"]}],"value":"Soy un desarrollador de <span style=\" color: #64ffda;\">Paginas web</span> sencillas como esta!"},"buttons":{"type":"array","item_type":"#/elements/definitions/button","items":[{"tag":"a","type":"button","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-64ffda"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"border-radius","label":"Roundness","isPrimary":true,"classes":["sw-border-radius-none"]},{"name":"background-color","label":"Background color","isPrimary":true,"classes":["sw-background-color-0a192f"]},{"name":"padding-left-right","label":"Padding left/right","isPrimary":true,"classes":["sw-padding-left-2xs","sw-padding-right-2xs"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-5xs","sw-padding-bottom-5xs"]},{"name":"border","label":"Border","isPrimary":true,"classes":["sw-border-style-solid","sw-border-width-xs","sw-border-color-64ffda"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"label":"Escríbeme!","action":{"type":"navigate","options":{"url":{"destination":"/#form1","target":""},"modalOptions":{"modalSize":"md","modalType":"center"},"isModelTypeEnabled":true},"action":"Scroll to section > Home/#form1"}}]},"imageOrVideo":{"tag":"img","primaryStyles":[{"name":"percentage-width","label":"Size","isPrimary":true,"classes":["sw-percentage-width-full"]},{"name":"border","label":"Border","isPrimary":true,"classes":["sw-border-style-none","sw-border-width-xs","sw-border-color-000000"]},{"name":"border-radius","label":"Roundness","isPrimary":true,"classes":["sw-border-radius-none"]}],"src":"","alt":"","controls":false,"autoplay":true,"loop":true},"backgroundImage":{"tag":"img","primaryStyles":[{"name":"background-repeat","label":"Repeat","isPrimary":true,"classes":["sw-background-repeat-no-repeat"]},{"name":"background-size","label":"Size","isPrimary":true,"classes":["sw-background-size-cover"]},{"name":"background-position","label":"Position","isPrimary":true,"classes":["sw-background-position-center"]},{"name":"background-attachment","label":"Behaviour","isPrimary":true,"classes":["sw-background-attachment-scroll"]}],"src":""},"modalSizeOptions":[{"className":"sw-letter-s","key":"sm"},{"className":"sw-letter-m","key":"md"},{"className":"sw-letter-l","key":"lg"},{"className":"sw-letter-xl","key":"xl"}],"modalTypeOptions":[{"className":"sw-modal-type-side","key":"side"},{"className":"sw-modal-type-center","key":"center"}]},"type":"static","collection":null,"enabled":"true","order":"null","created_at":"2023-11-16T00:18:15.406531271","updated":[],"permissions":{"EDIT":{"predefinedUserGroupType":null,"customUserGroupIds":[],"enabledPredefinedUserGroupTypes":["ALL_USERS","LOGGED_IN_USERS","NON_LOGGED_IN_USERS"]},"VIEW":{"predefinedUserGroupType":"ALL_USERS","customUserGroupIds":[],"enabledPredefinedUserGroupTypes":["ALL_USERS","LOGGED_IN_USERS","NON_LOGGED_IN_USERS"]}}};block_4fa559486d684cb584932d7767983b88_defJson['defaultTheme'] = reactDefaultThemes;block_4fa559486d684cb584932d7767983b88_defJson['settings'] = {};block_4fa559486d684cb584932d7767983b88.promise.then((block) => {block.render(document.getElementsByClassName('block-4fa55948-6d68-4cb5-8493-2d7767983b88')[0], block_4fa559486d684cb584932d7767983b88_defJson).catch((error) => {console.error(error);});});const block_ffa8de924d014688b3fa1b1a5409e55b_defJson = {"id":"ffa8de92-4d01-4688-b3fa-1b1a5409e55b","version":"3.1.1","hrid":"cta1","name":"cta2","title":"Call to action with a button","image":"https://softr-assets-eu-shared.s3.eu-central-1.amazonaws.com/studio/blocks/assets/cta2.png","category":"CTA","keywords":"call to action, cta, simple","elements":{"definitions":{"button":{"tag":"a","type":"button","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-default"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"border-radius","label":"Roundness","isPrimary":true,"classes":["sw-border-radius-default"]},{"name":"background-color","label":"Background color","isPrimary":true,"classes":["sw-background-color-default"]},{"name":"padding-left-right","label":"Padding left/right","isPrimary":true,"classes":["sw-padding-left-2xs","sw-padding-right-2xs"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-5xs","sw-padding-bottom-5xs"]},{"name":"border","label":"Border","isPrimary":true,"classes":["sw-border-style-none","sw-border-width-xs","sw-border-color-000000"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"label":"Button label","action":{"type":"navigate","options":{"url":{"destination":"","target":""},"modalOptions":{"modalSize":"md"}}}}},"container":{"tag":"section","type":"container","primaryStyles":[{"name":"background-color","label":"Background color","isPrimary":true,"classes":["sw-background-color-0a192f"]},{"name":"padding-top","label":"Padding top","isPrimary":true,"classes":["sw-padding-top-2xl"]},{"name":"padding-bottom","label":"Padding bottom","isPrimary":true,"classes":["sw-padding-bottom-2xl"]},{"name":"border-top","label":"Border top","isPrimary":true,"classes":["sw-border-top-style-none","sw-border-top-width-xs","sw-border-top-color-000000"]},{"name":"border-bottom","label":"Border bottom","isPrimary":true,"classes":["sw-border-bottom-style-none","sw-border-bottom-width-xs","sw-border-bottom-color-000000"]}]},"box":{"tag":"div","type":"container","primaryStyles":[{"name":"background-color","label":"Background color","isPrimary":true,"classes":["sw-background-color-none"]},{"name":"border","label":"Border","isPrimary":true,"classes":["sw-border-style-none","sw-border-width-xs","sw-border-color-000000"]},{"name":"border-radius","label":"Roundness","isPrimary":true,"classes":["sw-border-radius-none"]},{"name":"shadow","label":"Shadow","isPrimary":true,"classes":["sw-box-shadow-none"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-none","sw-padding-bottom-none"]}]},"header":{"htmlTag":"h2","type":"text","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-4xl","sw-text-color-64ffda"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-default"]},{"name":"padding-top","label":"Padding top","isPrimary":true,"classes":["sw-padding-top-none"]},{"name":"padding-bottom","label":"Padding bottom","isPrimary":true,"classes":["sw-padding-bottom-4xs"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]},{"name":"line-height","label":"Line height","isPrimary":true,"classes":["sw-line-height-normal"]}],"value":"Sobre mi"},"text":{"tag":"p","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-2xl","sw-text-color-8892b0"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-default"]},{"name":"padding-top","label":"Padding top","isPrimary":true,"classes":["sw-padding-top-none"]},{"name":"padding-bottom","label":"Padding bottom","isPrimary":true,"classes":["sw-padding-bottom-3xs"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]},{"name":"line-height","label":"Line height","isPrimary":true,"classes":["sw-line-height-normal"]}],"value":"Soy un pequeño desarrollador de: <span style=\"color: #64ffda; font-family: 'B612 Mono';\"> Paginas web</span>,  <span style=\"color: #64ffda; font-family: 'B612 Mono';\"> aplicaiones</span> y proyectos simples, tengo experiencia con <span style=\"color: #64ffda; font-family: 'B612 Mono';\"> Chatbots</span>, <span style=\"color: #64ffda; font-family: 'B612 Mono';\">No-code</span> y <span style=\"color: #64ffda; font-family: 'B612 Mono';\"> Livecode</span>.\nDesde siempre me ha gustado la tecnologia y a ello me he dedicado, \n<span style=\"color: #64ffda; font-family: 'B612 Mono';\"> (mas a la programacion)</span>\ny espero ayudar en este mundo 😀"},"backgroundImage":{"tag":"img","primaryStyles":[{"name":"background-repeat","label":"Repeat","isPrimary":true,"classes":["sw-background-repeat-no-repeat"]},{"name":"background-size","label":"Size","isPrimary":true,"classes":["sw-background-size-cover"]},{"name":"background-position","label":"Position","isPrimary":true,"classes":["sw-background-position-center"]},{"name":"background-attachment","label":"Behaviour","isPrimary":true,"classes":["sw-background-attachment-scroll"]}],"src":""},"buttons":{"type":"array","item_type":"#/elements/definitions/button","items":[]},"modalSizeOptions":[{"className":"sw-letter-s","key":"sm"},{"className":"sw-letter-m","key":"md"},{"className":"sw-letter-l","key":"lg"},{"className":"sw-letter-xl","key":"xl"}]},"type":"static","collection":null,"enabled":"true","order":"null","created_at":"2023-11-16T22:05:01.063","updated":[],"permissions":{"EDIT":{"predefinedUserGroupType":null,"customUserGroupIds":[],"enabledPredefinedUserGroupTypes":["ALL_USERS","LOGGED_IN_USERS","NON_LOGGED_IN_USERS"]},"VIEW":{"predefinedUserGroupType":"ALL_USERS","customUserGroupIds":[],"enabledPredefinedUserGroupTypes":["ALL_USERS","LOGGED_IN_USERS","NON_LOGGED_IN_USERS"]}}};block_ffa8de924d014688b3fa1b1a5409e55b_defJson['defaultTheme'] = reactDefaultThemes;block_ffa8de924d014688b3fa1b1a5409e55b_defJson['settings'] = {};block_ffa8de924d014688b3fa1b1a5409e55b.promise.then((block) => {block.render(document.getElementsByClassName('block-ffa8de92-4d01-4688-b3fa-1b1a5409e55b')[0], block_ffa8de924d014688b3fa1b1a5409e55b_defJson).catch((error) => {console.error(error);});});const block_4b533c4c7fa7443bbf7274257d15fff3_defJson = {"id":"4b533c4c-7fa7-443b-bf72-74257d15fff3","version":"3.1.1","hrid":"feature-grid2","name":"feature-grid2","title":"Feature grid with images","image":"https://softr-assets-eu-shared.s3.eu-central-1.amazonaws.com/studio/blocks/assets/feature-grid2.png","category":"Feature Grid","keywords":"feature grid, simple, Highlights list","elements":{"definitions":{"feature":{"image":{"tag":"i","type":"image","primaryStyles":[{"name":"height","label":"Size","isPrimary":true,"classes":["sw-width-3xs","sw-height-3xs"]}],"otherStyles":[{"name":"others","label":"Other","isPrimary":true,"classes":["sw-margin-bottom-2xs"]}],"src":"https://softr-assets-eu-shared.s3.eu-central-1.amazonaws.com/illustrations/rosa/girl-with-laptop.svg","alt":"Feature title"},"title":{"htmlTag":"h6","type":"text","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-default"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-semibold"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"otherStyles":[{"name":"others","label":"Other","isPrimary":true,"classes":["sw-margin-top-6xs","sw-margin-bottom-6xs"]}],"value":"Feature title"},"description":{"tag":"p","type":"text","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-default"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-default"]},{"name":"line-height","label":"Line height","isPrimary":true,"classes":["sw-line-height-normal"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"value":"Feature description"},"link":{"tag":"a","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-EAB10B"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"margin-top/bottom","label":"Margin top/bottom","isPrimary":true,"classes":["sw-margin-top-none","sw-margin-bottom-none"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-text-decoration-no-underline","hover:sw-text-decoration-no-underline","sw-display-inline-block"]}],"value":"Read more","action":{"type":"navigate","options":{"url":{"destination":"","target":""},"modalOptions":{"modalSize":"md"}}}}}},"container":{"tag":"section","type":"container","primaryStyles":[{"name":"background-color","label":"Background color","isPrimary":true,"classes":["sw-background-color-0a192f"]},{"name":"padding-top","label":"Padding top","isPrimary":true,"classes":["sw-padding-top-2xl"]},{"name":"padding-bottom","label":"Padding bottom","isPrimary":true,"classes":["sw-padding-bottom-2xl"]},{"name":"border-top","label":"Border top","isPrimary":true,"classes":["sw-border-top-style-none","sw-border-top-width-xs","sw-border-top-color-000000"]},{"name":"border-bottom","label":"Border bottom","isPrimary":true,"classes":["sw-border-bottom-style-none","sw-border-bottom-width-xs","sw-border-bottom-color-000000"]}]},"header":{"htmlTag":"h2","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-5xl","sw-text-color-ccd6f6"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-fredoka"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-default"]},{"name":"padding-top","label":"Padding top","isPrimary":true,"classes":["sw-padding-top-none"]},{"name":"padding-bottom","label":"Padding bottom","isPrimary":true,"classes":["sw-padding-bottom-6xs"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]},{"name":"line-height","label":"Line height","isPrimary":true,"classes":["sw-line-height-normal"]}],"value":"Mis proyectos"},"text":{"tag":"p","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xl","sw-text-color-64ffda"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-b612_mono"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-default"]},{"name":"padding-top","label":"Padding top","isPrimary":true,"classes":["sw-padding-top-none"]},{"name":"padding-bottom","label":"Padding bottom","isPrimary":true,"classes":["sw-padding-bottom-none"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]},{"name":"line-height","label":"Line height","isPrimary":true,"classes":["sw-line-height-normal"]}],"value":"Estos son algunos de mis proyectos"},"backgroundImage":{"tag":"img","primaryStyles":[{"name":"background-repeat","label":"Repeat","isPrimary":true,"classes":["sw-background-repeat-no-repeat"]},{"name":"background-size","label":"Size","isPrimary":true,"classes":["sw-background-size-cover"]},{"name":"background-position","label":"Position","isPrimary":true,"classes":["sw-background-position-center"]},{"name":"background-attachment","label":"Behaviour","isPrimary":true,"classes":["sw-background-attachment-scroll"]}],"otherStyles":[],"src":""},"features":{"type":"array","minItems":0,"maxItems":1024,"item_type":"#/elements/definitions/feature","items":[{"image":{"tag":"i","type":"image","primaryStyles":[{"name":"height","label":"Size","isPrimary":true,"classes":["sw-width-2xs","sw-height-3xs"]}],"otherStyles":[{"name":"others","label":"Other","isPrimary":true,"classes":["sw-margin-bottom-2xs"]}],"src":"https://softr-prod.imgix.net/applications/6278398e-1387-40a0-a1c1-1db1673d2061/assets/7adc9a21-1239-4ad0-ab95-c96d12d14a0d.png","alt":"Feature title"},"title":{"htmlTag":"h6","type":"text","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-ccd6f6"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-semibold"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"otherStyles":[{"name":"others","label":"Other","isPrimary":true,"classes":["sw-margin-top-6xs","sw-margin-bottom-6xs"]}],"value":"Mundo de textos"},"description":{"tag":"p","type":"text","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-8892b0"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-b612_mono"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-default"]},{"name":"line-height","label":"Line height","isPrimary":true,"classes":["sw-line-height-normal"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"value":"Es una pagina donde puedes compartir textos, libros, poemas, etc.\n "},"link":{"tag":"a","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-EAB10B"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"margin-top/bottom","label":"Margin top/bottom","isPrimary":true,"classes":["sw-margin-top-none","sw-margin-bottom-none"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-text-decoration-no-underline","hover:sw-text-decoration-no-underline","sw-display-inline-block"]}],"value":"Visitar","action":{"type":"navigate","options":{"url":{"destination":"https://mundodetextos.softr.app/","target":"_blank"},"modalOptions":{"modalSize":"md"}},"action":"Open external url > https://mundodetextos.softr.app/"}}},{"image":{"tag":"i","type":"image","primaryStyles":[{"name":"height","label":"Size","isPrimary":true,"classes":["sw-width-3xs","sw-height-3xs"]}],"otherStyles":[{"name":"others","label":"Other","isPrimary":true,"classes":["sw-margin-bottom-2xs"]}],"src":"https://softr-prod.imgix.net/applications/6278398e-1387-40a0-a1c1-1db1673d2061/assets/365a8063-32ce-48e7-9e85-3226c53831df.png","alt":"Feature title"},"title":{"htmlTag":"h6","type":"text","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-ccd6f6"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-semibold"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"otherStyles":[{"name":"others","label":"Other","isPrimary":true,"classes":["sw-margin-top-6xs","sw-margin-bottom-6xs"]}],"value":"Sidechill <span style=\"color: #64ffda;\"> (beta)</span>"},"description":{"tag":"p","type":"text","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-8892b0"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-b612_mono"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-default"]},{"name":"line-height","label":"Line height","isPrimary":true,"classes":["sw-line-height-normal"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"value":"Es un sitio donde te puedes relajar y tranquilizarte en tu propia sala <span style=\"color: #64ffda;\"> (no terminado)</span>\n "},"link":{"tag":"a","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-EAB10B"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"margin-top/bottom","label":"Margin top/bottom","isPrimary":true,"classes":["sw-margin-top-none","sw-margin-bottom-none"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-text-decoration-no-underline","hover:sw-text-decoration-no-underline","sw-display-inline-block"]}],"value":"Visitar","action":{"type":"navigate","options":{"url":{"destination":"https://sidechill.softr.app/","target":"_blank"},"modalOptions":{"modalSize":"md"}},"action":"Open external url > https://sidechill.softr.app/"}}},{"image":{"tag":"i","type":"image","primaryStyles":[{"name":"height","label":"Size","isPrimary":true,"classes":["sw-width-3xs","sw-height-3xs"]}],"otherStyles":[{"name":"others","label":"Other","isPrimary":true,"classes":["sw-margin-bottom-2xs"]}],"src":"https://softr-prod.imgix.net/applications/6278398e-1387-40a0-a1c1-1db1673d2061/assets/570ad5dc-cb20-4b23-9135-b16132c93403.jpeg","alt":"Feature title"},"title":{"htmlTag":"h6","type":"text","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-ccd6f6"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-semibold"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"otherStyles":[{"name":"others","label":"Other","isPrimary":true,"classes":["sw-margin-top-6xs","sw-margin-bottom-6xs"]}],"value":"Plataforma de colegio  <span style=\"color: #64ffda;\"> (beta)</span>"},"description":{"tag":"p","type":"text","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-8892b0"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-b612_mono"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-default"]},{"name":"line-height","label":"Line height","isPrimary":true,"classes":["sw-line-height-normal"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"value":"Este es una plataforma para el colegio donde puedes subir tareas, ver notas, comunicados y más.\n "},"link":{"tag":"a","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-EAB10B"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"margin-top/bottom","label":"Margin top/bottom","isPrimary":true,"classes":["sw-margin-top-none","sw-margin-bottom-none"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-text-decoration-no-underline","hover:sw-text-decoration-no-underline","sw-display-inline-block"]}],"value":"Visitar","action":{"type":"navigate","options":{"url":{"destination":"https://colegio-plataforma.softr.app/","target":"_blank"},"modalOptions":{"modalSize":"md"}},"action":"Open external url > https://colegio-plataforma.softr.app/"}}}]},"modalSizeOptions":[{"className":"sw-letter-s","key":"sm"},{"className":"sw-letter-m","key":"md"},{"className":"sw-letter-l","key":"lg"},{"className":"sw-letter-xl","key":"xl"}]},"type":"static","collection":null,"enabled":"true","order":"null","created_at":"2023-11-16T21:38:07.093","updated":[],"permissions":{"EDIT":{"predefinedUserGroupType":null,"customUserGroupIds":[],"enabledPredefinedUserGroupTypes":["ALL_USERS","LOGGED_IN_USERS","NON_LOGGED_IN_USERS"]},"VIEW":{"predefinedUserGroupType":"ALL_USERS","customUserGroupIds":[],"enabledPredefinedUserGroupTypes":["ALL_USERS","LOGGED_IN_USERS","NON_LOGGED_IN_USERS"]}}};block_4b533c4c7fa7443bbf7274257d15fff3_defJson['defaultTheme'] = reactDefaultThemes;block_4b533c4c7fa7443bbf7274257d15fff3_defJson['settings'] = {};block_4b533c4c7fa7443bbf7274257d15fff3.promise.then((block) => {block.render(document.getElementsByClassName('block-4b533c4c-7fa7-443b-bf72-74257d15fff3')[0], block_4b533c4c7fa7443bbf7274257d15fff3_defJson).catch((error) => {console.error(error);});});const block_365b3937a6cd4132a11d5ec73095cc98_defJson = {"id":"365b3937-a6cd-4132-a11d-5ec73095cc98","version":"3.6.0","hrid":"form1","name":"form3","title":"Customizable form","image":"https://softr-assets-eu-shared.s3.eu-central-1.amazonaws.com/studio/blocks/assets/form3.png","category":"Form","keywords":"customizable form, simple, Action button, sales form, lead generation, marketing form","elements":{"formPosition":["LEFT","RIGHT","BOTTOM"],"selectedFormPosition":"RIGHT","definitions":{"label":{"tag":"span","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-616161"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-semibold"]},{"name":"text-alignment","label":"Alignment","isPrimary":true,"classes":["sw-text-align-left"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-6xs","sw-padding-bottom-none"]},{"name":"padding-left-right","label":"Padding left/right","isPrimary":true,"classes":["sw-padding-left-none","sw-padding-right-none"]}],"otherStyles":[],"value":"LABEL"},"button":{"tag":"a","type":"button","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-s","sw-text-color-default"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-light"]},{"name":"border-radius","label":"Roundness","isPrimary":true,"classes":["sw-border-radius-default"]},{"name":"background-color","label":"Background color","isPrimary":true,"classes":["sw-background-color-default"]},{"name":"hover-background-color","label":"Hover Background color/ Box shadow","isPrimary":true,"classes":["hover:sw-background-color-default","hover:sw-box-shadow-s"]},{"name":"padding-left-right","label":"Padding left/right","isPrimary":true,"classes":["sw-padding-left-xs","sw-padding-right-xs"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-6xs","sw-padding-bottom-6xs"]},{"name":"margin-top-bottom","label":"Margin top/bottom","isPrimary":true,"classes":["sw-margin-top-5xs","sw-margin-bottom-none"]},{"name":"border","label":"Border","isPrimary":true,"classes":["sw-border-style-none","sw-border-width-xs","sw-border-color-AEAEB5"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-width-full"]}],"label":"Submit Inquiry","action":{"type":"request","applicationId":"","options":{"mailchimp":{"url":""},"mailerlite":{"url":""},"zapierWebhook":{"url":""},"integromatWebhook":{"url":""},"airtableBase":{"url":""},"email":{"value":""}}}},"formElement":{"tag":"input","type":"","label":{"tag":"span","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-616161"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-semibold"]},{"name":"text-alignment","label":"Alignment","isPrimary":true,"classes":["sw-text-align-left"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-6xs","sw-padding-bottom-none"]},{"name":"padding-left-right","label":"Padding left/right","isPrimary":true,"classes":["sw-padding-left-none","sw-padding-right-none"]}],"otherStyles":[],"value":"LABEL"},"name":"","values":"","isRequired":false,"deletable":true,"primaryStyles":[{"name":"background-color","label":"Background color","isPrimary":true,"classes":["sw-background-color-FFFFFF"]},{"name":"hover-background-color","label":"Hover Background color","isPrimary":true,"classes":["hover:sw-background-color-FFFFFF"]},{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-s","sw-text-color-0A0A0A"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"border-radius","label":"Roundness","isPrimary":true,"classes":["sw-border-radius-l"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-6xs","sw-padding-bottom-6xs"]},{"name":"margin-top-bottom","label":"Margin top/bottom","isPrimary":true,"classes":["sw-margin-top-6xs","sw-margin-bottom-6xs"]},{"name":"border","label":"Border","isPrimary":true,"classes":["sw-border-style-solid","sw-border-width-xs","sw-border-color-C2C2C2"]},{"name":"hover-border","label":"Hover Border","isPrimary":true,"classes":["hover:sw-border-style-solid","hover:sw-border-width-xs","hover:sw-border-color-616161"]},{"name":"shadow","label":"Shadow","isPrimary":true,"classes":["sw-box-shadow-none"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-display-inline-block","sw-padding-left-4xs","sw-outline-none","sw-width-full"]}],"placeholder":""},"formDropdown":{"tag":"input","type":"auto_sync_dropdown","label":{"tag":"span","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-616161"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-semibold"]},{"name":"text-alignment","label":"Alignment","isPrimary":true,"classes":["sw-text-align-left"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-6xs","sw-padding-bottom-none"]},{"name":"padding-left-right","label":"Padding left/right","isPrimary":true,"classes":["sw-padding-left-none","sw-padding-right-none"]}],"otherStyles":[],"value":"LABEL"},"name":"","values":"","isRequired":false,"deletable":true,"primaryStyles":[{"name":"background-color","label":"Background color","isPrimary":true,"classes":["sw-background-color-FFFFFF"]},{"name":"hover-background-color","label":"Hover Background color","isPrimary":true,"classes":["hover:sw-background-color-FFFFFF"]},{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-s","sw-text-color-0A0A0A"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"border-radius","label":"Roundness","isPrimary":true,"classes":["sw-border-radius-l"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-6xs","sw-padding-bottom-6xs"]},{"name":"margin-top-bottom","label":"Margin top/bottom","isPrimary":true,"classes":["sw-margin-top-6xs","sw-margin-bottom-6xs"]},{"name":"border","label":"Border","isPrimary":true,"classes":["sw-border-style-solid","sw-border-width-xs","sw-border-color-C2C2C2"]},{"name":"hover-border","label":"Hover Border","isPrimary":true,"classes":["hover:sw-border-style-solid","hover:sw-border-width-xs","hover:sw-border-color-616161"]},{"name":"shadow","label":"Shadow","isPrimary":true,"classes":["sw-box-shadow-none"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-display-inline-block","sw-padding-left-4xs","sw-outline-none","sw-width-full"]}],"placeholder":"","syncWithDataSource":false,"multiSelect":false,"allowUserToAddOption":false,"optionsOrder":"ASC","multiRecordsLink":false},"rating":{"tag":"div","type":"rating","values":"","isRequired":false,"deletable":true,"placeholder":"Rating","name":"","label":{"value":"Rating","tag":"span","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-616161"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-semibold"]},{"name":"text-alignment","label":"Alignment","isPrimary":true,"classes":["sw-text-align-left"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-6xs","sw-padding-bottom-none"]},{"name":"padding-left-right","label":"Padding left/right","isPrimary":true,"classes":["sw-padding-left-none","sw-padding-right-none"]}],"otherStyles":[]},"primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-s","sw-text-color-FFC400"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-6xs","sw-padding-bottom-6xs"]}]},"checkbox":{"tag":"input","type":"","label":"","name":"","values":"","isRequired":false,"deletable":true,"primaryStyles":[{"name":"background-color","label":"Background color","isPrimary":true,"classes":["sw-background-color-FFFFFF"]},{"name":"hover-background-color","label":"Hover Background color","isPrimary":true,"classes":["hover:sw-background-color-FFFFFF"]},{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-s","sw-text-color-0A0A0A"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"border-radius","label":"Roundness","isPrimary":true,"classes":["sw-border-radius-s"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-6xs","sw-padding-bottom-6xs"]},{"name":"margin-top-bottom","label":"Margin top/bottom","isPrimary":true,"classes":["sw-margin-top-6xs","sw-margin-bottom-6xs"]},{"name":"border","label":"Border","isPrimary":true,"classes":["sw-border-style-solid","sw-border-width-xs","sw-border-color-C2C2C2"]},{"name":"hover-border","label":"Hover Border","isPrimary":true,"classes":["hover:sw-border-style-solid","hover:sw-border-width-xs","hover:sw-border-color-F8D877"]},{"name":"shadow","label":"Shadow","isPrimary":true,"classes":["sw-box-shadow-none"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-display-inline-block","sw-outline-none"]}],"placeholder":""},"signature":{"tag":"input","type":"","label":{"tag":"span","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-616161"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-semibold"]},{"name":"text-alignment","label":"Alignment","isPrimary":true,"classes":["sw-text-align-left"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-6xs","sw-padding-bottom-none"]},{"name":"padding-left-right","label":"Padding left/right","isPrimary":true,"classes":["sw-padding-left-none","sw-padding-right-none"]}],"otherStyles":[],"value":"LABEL"},"name":"","values":"","isRequired":false,"deletable":true,"primaryStyles":[{"name":"background-color","label":"Background color","isPrimary":true,"classes":["sw-background-color-FFFFFF"]},{"name":"hover-background-color","label":"Hover Background color","isPrimary":true,"classes":["hover:sw-background-color-FFFFFF"]},{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-s","sw-text-color-0A0A0A"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"border-radius","label":"Roundness","isPrimary":true,"classes":["sw-border-radius-l"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-6xs","sw-padding-bottom-6xs"]},{"name":"margin-top-bottom","label":"Margin top/bottom","isPrimary":true,"classes":["sw-margin-top-6xs","sw-margin-bottom-6xs"]},{"name":"border","label":"Border","isPrimary":true,"classes":["sw-border-style-solid","sw-border-width-xs","sw-border-color-C2C2C2"]},{"name":"hover-border","label":"Hover Border","isPrimary":true,"classes":["hover:sw-border-style-solid","hover:sw-border-width-xs","hover:sw-border-color-616161"]},{"name":"shadow","label":"Shadow","isPrimary":true,"classes":["sw-box-shadow-none"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-display-inline-block","sw-padding-left-4xs","sw-outline-none","sw-width-full"]}],"placeholder":""}},"container":{"tag":"section","type":"container","primaryStyles":[{"name":"background-color","label":"Background color","classes":["sw-background-color-0a192f"]},{"name":"padding-top","label":"Padding top","classes":["sw-padding-top-2xl"]},{"name":"padding-bottom","label":"Padding bottom","classes":["sw-padding-bottom-2xl"]},{"name":"border-top","label":"Border top","classes":["sw-border-top-style-none","sw-border-top-width-xs","sw-border-top-color-000000"]},{"name":"border-bottom","label":"Border bottom","classes":["sw-border-bottom-style-none","sw-border-bottom-width-xs","sw-border-bottom-color-000000"]}],"otherStyles":[]},"header":{"htmlTag":"h2","type":"text","primaryStyles":[{"name":"size-color","label":"Text Size/Color","classes":["sw-font-size-2xl","sw-text-color-ccd6f6"]},{"name":"font-family","label":"Font family","classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","classes":["sw-font-weight-default"]},{"name":"padding-top","label":"Padding top","isPrimary":true,"classes":["sw-padding-top-none"]},{"name":"padding-bottom","label":"Padding bottom","classes":["sw-padding-bottom-6xs"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]},{"name":"line-height","label":"Line height","isPrimary":true,"classes":["sw-line-height-normal"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-width-full"]}],"value":"Escríbeme!"},"text":{"tag":"p","type":"text","primaryStyles":[{"name":"size-color","label":"Text Size/Color","classes":["sw-font-size-l","sw-text-color-8892b0"]},{"name":"font-family","label":"Font family","classes":["sw-font-family-b612_mono"]},{"name":"font-weight","label":"Font weight","classes":["sw-font-weight-default"]},{"name":"padding-top","label":"Padding top","isPrimary":true,"classes":["sw-padding-top-none"]},{"name":"padding-bottom","label":"Padding bottom","classes":["sw-padding-bottom-4xs"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]},{"name":"line-height","label":"Line height","isPrimary":true,"classes":["sw-line-height-normal"]}],"otherStyles":[],"value":"Si quieres una pagina web, que trbajemos juntos, o cualquier otra cosa escribeme, y tambien te dejo aqui mi correo <span style=\"color: #64ffda;\">santiagortegacontacto@gmail.com\n</span>"},"backgroundImage":{"tag":"img","primaryStyles":[{"name":"background-repeat","label":"Repeat","isPrimary":true,"classes":["sw-background-repeat-no-repeat"]},{"name":"background-size","label":"Size","isPrimary":true,"classes":["sw-background-size-cover"]},{"name":"background-position","label":"Position","isPrimary":true,"classes":["sw-background-position-center"]},{"name":"background-attachment","label":"Behaviour","isPrimary":true,"classes":["sw-background-attachment-scroll"]}],"otherStyles":[],"src":""},"form":{"type":"form_capture","elements":{"type":"array","item_type":"#/elements/definitions/formElement","items":[{"tag":"input","type":"short_text","label":{"tag":"span","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-8892b0"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-semibold"]},{"name":"text-alignment","label":"Alignment","isPrimary":true,"classes":["sw-text-align-left"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-6xs","sw-padding-bottom-none"]},{"name":"padding-left-right","label":"Padding left/right","isPrimary":true,"classes":["sw-padding-left-none","sw-padding-right-none"]}],"otherStyles":[],"value":"Nombre","$ref":"#/elements/definitions/label"},"name":"NAME","values":"","isRequired":true,"deletable":true,"primaryStyles":[{"name":"background-color","label":"Background color","isPrimary":true,"classes":["sw-background-color-0a192f"]},{"name":"hover-background-color","label":"Hover Background color","isPrimary":true,"classes":["hover:sw-background-color-0a192f"]},{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-s","sw-text-color-64ffda"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"border-radius","label":"Roundness","isPrimary":true,"classes":["sw-border-radius-none"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-6xs","sw-padding-bottom-6xs"]},{"name":"margin-top-bottom","label":"Margin top/bottom","isPrimary":true,"classes":["sw-margin-top-6xs","sw-margin-bottom-6xs"]},{"name":"border","label":"Border","isPrimary":true,"classes":["sw-border-style-solid","sw-border-width-xs","sw-border-color-64ffda"]},{"name":"hover-border","label":"Hover Border","isPrimary":true,"classes":["hover:sw-border-style-solid","hover:sw-border-width-xs","hover:sw-border-color-64ffda"]},{"name":"shadow","label":"Shadow","isPrimary":true,"classes":["sw-box-shadow-none"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-display-inline-block","sw-padding-left-4xs","sw-outline-none","sw-width-full"]}],"placeholder":"Como te llamas?"},{"tag":"input","type":"email","label":{"tag":"span","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-8892b0"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-semibold"]},{"name":"text-alignment","label":"Alignment","isPrimary":true,"classes":["sw-text-align-left"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-6xs","sw-padding-bottom-none"]},{"name":"padding-left-right","label":"Padding left/right","isPrimary":true,"classes":["sw-padding-left-none","sw-padding-right-none"]}],"otherStyles":[],"value":"Correo","$ref":"#/elements/definitions/label"},"name":"Correo","values":"","isRequired":true,"deletable":true,"primaryStyles":[{"name":"background-color","label":"Background color","isPrimary":true,"classes":["sw-background-color-0a192f"]},{"name":"hover-background-color","label":"Hover Background color","isPrimary":true,"classes":["hover:sw-background-color-0a192f"]},{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-s","sw-text-color-64ffda"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"border-radius","label":"Roundness","isPrimary":true,"classes":["sw-border-radius-none"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-6xs","sw-padding-bottom-6xs"]},{"name":"margin-top-bottom","label":"Margin top/bottom","isPrimary":true,"classes":["sw-margin-top-6xs","sw-margin-bottom-6xs"]},{"name":"border","label":"Border","isPrimary":true,"classes":["sw-border-style-solid","sw-border-width-xs","sw-border-color-64ffda"]},{"name":"hover-border","label":"Hover Border","isPrimary":true,"classes":["hover:sw-border-style-solid","hover:sw-border-width-xs","hover:sw-border-color-64ffda"]},{"name":"shadow","label":"Shadow","isPrimary":true,"classes":["sw-box-shadow-none"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-display-inline-block","sw-padding-left-4xs","sw-outline-none","sw-width-full"]}],"placeholder":"Tu correo"},{"tag":"input","type":"long_text","label":{"tag":"span","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-8892b0"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-semibold"]},{"name":"text-alignment","label":"Alignment","isPrimary":true,"classes":["sw-text-align-left"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-6xs","sw-padding-bottom-none"]},{"name":"padding-left-right","label":"Padding left/right","isPrimary":true,"classes":["sw-padding-left-none","sw-padding-right-none"]}],"otherStyles":[],"value":"Mensaje","$ref":"#/elements/definitions/label"},"name":"MESSAGE","values":"","isRequired":true,"deletable":true,"primaryStyles":[{"name":"background-color","label":"Background color","isPrimary":true,"classes":["sw-background-color-0a192f"]},{"name":"hover-background-color","label":"Hover Background color","isPrimary":true,"classes":["hover:sw-background-color-0a192f"]},{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-s","sw-text-color-64ffda"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"border-radius","label":"Roundness","isPrimary":true,"classes":["sw-border-radius-none"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-6xs","sw-padding-bottom-6xs"]},{"name":"margin-top-bottom","label":"Margin top/bottom","isPrimary":true,"classes":["sw-margin-top-6xs","sw-margin-bottom-6xs"]},{"name":"border","label":"Border","isPrimary":true,"classes":["sw-border-style-solid","sw-border-width-xs","sw-border-color-64ffda"]},{"name":"hover-border","label":"Hover Border","isPrimary":true,"classes":["hover:sw-border-style-solid","hover:sw-border-width-xs","hover:sw-border-color-64ffda"]},{"name":"shadow","label":"Shadow","isPrimary":true,"classes":["sw-box-shadow-none"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-display-inline-block","sw-padding-left-4xs","sw-outline-none","sw-width-full"]}],"placeholder":"Que me quieres decir?"}]},"button":{"tag":"a","type":"button","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-s","sw-text-color-64ffda"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-light"]},{"name":"border-radius","label":"Roundness","isPrimary":true,"classes":["sw-border-radius-none"]},{"name":"background-color","label":"Background color","isPrimary":true,"classes":["sw-background-color-0a192f"]},{"name":"hover-background-color","label":"Hover Background color/ Box shadow","isPrimary":true,"classes":["hover:sw-background-color-default","hover:sw-box-shadow-s"]},{"name":"padding-left-right","label":"Padding left/right","isPrimary":true,"classes":["sw-padding-left-xs","sw-padding-right-xs"]},{"name":"padding-top-bottom","label":"Padding top/bottom","isPrimary":true,"classes":["sw-padding-top-6xs","sw-padding-bottom-6xs"]},{"name":"margin-top-bottom","label":"Margin top/bottom","isPrimary":true,"classes":["sw-margin-top-5xs","sw-margin-bottom-none"]},{"name":"border","label":"Border","isPrimary":true,"classes":["sw-border-style-solid","sw-border-width-xs","sw-border-color-64ffda"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-width-full"]}],"label":"Enviar!","action":{"type":"request","applicationId":"","options":{"mailchimp":{"url":""},"mailerlite":{"url":""},"zapierWebhook":{"url":""},"integromatWebhook":{"url":""},"airtableBase":{"url":""},"email":{"value":"santiagortegacontacto@gmail.com"}}}},"reCaptcha":{"enabled":false,"type":"toggle"}},"success_action":{"supportedActionTypes":["DO_NOTHING","OPEN_DYNAMIC_EXTERNAL_URL","OPEN_PAGE"],"selectedActionType":"DO_NOTHING","externalUrl":"","selectedState":"ACTION","path":"NO_ACTION","message":{"value":"Thank you for getting in touch!","primaryStyles":[{"name":"size-color","label":"Text Size/Color","classes":["sw-font-size-xs","sw-text-color-5a5d63"]},{"name":"font-family","label":"Font family","classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","classes":["sw-font-weight-medium"]},{"name":"padding-top","label":"Padding top","isPrimary":true,"classes":["sw-padding-top-7xs"]},{"name":"padding-bottom","label":"Padding bottom","classes":["sw-padding-bottom-none"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}]}}},"type":"dynamic","collection":{"dataSources":[],"dataSource":{"id":"","supportedSourceTypes":["GOOGLE_SHEET","AIRTABLE","SMARTSUITE"],"type":"","airtable":{"url":"","baseId":"","tableName":"","viewName":""},"softr":{"applicationId":"","collectionId":""},"isComplete":false},"submitRestricted":false},"enabled":"true","order":"null","created_at":"2023-11-16T00:23:07.300","updated":[],"permissions":{"EDIT":{"predefinedUserGroupType":null,"customUserGroupIds":[],"enabledPredefinedUserGroupTypes":["ALL_USERS","LOGGED_IN_USERS","NON_LOGGED_IN_USERS"]},"VIEW":{"predefinedUserGroupType":"ALL_USERS","customUserGroupIds":[],"enabledPredefinedUserGroupTypes":["ALL_USERS","LOGGED_IN_USERS","NON_LOGGED_IN_USERS"]}}};block_365b3937a6cd4132a11d5ec73095cc98_defJson['defaultTheme'] = reactDefaultThemes;block_365b3937a6cd4132a11d5ec73095cc98_defJson['settings'] = {};block_365b3937a6cd4132a11d5ec73095cc98.promise.then((block) => {block.render(document.getElementsByClassName('block-365b3937-a6cd-4132-a11d-5ec73095cc98')[0], block_365b3937a6cd4132a11d5ec73095cc98_defJson).catch((error) => {console.error(error);});});const block_021fe34b800a409c9821587991fd3a03_defJson = {"id":"021fe34b-800a-409c-9821-587991fd3a03","version":"3.1.0","hrid":"home-footer1","name":"footer3","title":"Footer with link groups, description and secondary footer","image":"https://softr-assets-eu-shared.s3.eu-central-1.amazonaws.com/studio/blocks/assets/footer3.png","category":"Footer","keywords":"footer, simple, Navigation footer","elements":{"definitions":{"socialLink":{"tag":"a","type":"social-icon","value":"fab fa-facebook-f","url":"https://facebook.com/mycompany","primaryStyles":[{"name":"size-color","label":"Icon Size/Color","isPrimary":true,"classes":["sw-font-size-m","sw-text-color-616161"]},{"name":"width","label":"Width","isPrimary":true,"classes":["sw-width-11xs"]}],"otherStyles":[{"name":"others","label":"Others","classes":["sw-display-inline-block","sw-min-width-6xs","sw-margin-right-7xs","sw-text-align-center","sw-border-radius-s","sw-border-color-eaeff4","sw-border-style-solid","sw-border-width-xs","sw-padding-right-7xs","sw-padding-left-7xs","sw-padding-top-7xs","sw-padding-bottom-7xs","sw-opacity-2xs"]}]},"linkGroup":{"title":{"tag":"h6","type":"text","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-616161"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-semibold"]},{"name":"line-height","label":"Line height","isPrimary":true,"classes":["sw-line-height-tight"]}],"value":"Group title"},"links":{"type":"array","item_type":"#/elements/definitions/link","items":[]}},"link":{"tag":"a","type":"link","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-616161"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-padding-left-none","sw-padding-top-7xs","sw-padding-bottom-7xs","hover:sw-text-decoration-no-underline"]}],"value":"LINK NAME","action":{"type":"navigate","options":{"url":{"destination":"","target":""},"modalOptions":{"modalSize":"md"}}}}},"container":{"tag":"footer","type":"container","primaryStyles":[{"name":"background-color","label":"Background color","isPrimary":true,"classes":["sw-background-color-0a192f"]},{"name":"padding-top","label":"Padding top","isPrimary":true,"classes":["sw-padding-top-l"]},{"name":"padding-bottom","label":"Padding bottom","isPrimary":true,"classes":["sw-padding-bottom-l"]},{"name":"border-top","label":"Border top","isPrimary":true,"classes":["sw-border-top-style-none","sw-border-top-width-xs","sw-border-top-color-000000"]},{"name":"border-bottom","label":"Border bottom","isPrimary":true,"classes":["sw-border-bottom-style-none","sw-border-bottom-width-xs","sw-border-bottom-color-000000"]}]},"horizontalLine":{"tag":"hr","type":"horizontal-line","primaryStyles":[{"name":"max-width","label":"Width","isPrimary":true,"classes":["sw-margin-top-2xs","sw-margin-bottom-2xs"]},{"name":"border-top","label":"Border top","isPrimary":true,"classes":["sw-border-top-style-solid","sw-border-top-width-xs","sw-border-top-color-EDEDED"]}]},"copyrightText":{"tag":"p","type":"text","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-64ffda"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-default"]},{"name":"padding-top","label":"Padding top","isPrimary":true,"classes":["sw-padding-top-none"]},{"name":"padding-bottom","label":"Padding bottom","isPrimary":true,"classes":["sw-padding-bottom-none"]}],"otherStyles":[{"name":"others","label":"Others","classes":["sw-display-block"]}],"value":"© 2023 Santiago Ortega. All rights reserved."},"linkGroups":{"type":"array","minItems":2,"maxItems":4,"item_type":"#/elements/definitions/linkGroup","items":[{"title":{"tag":"h6","type":"text","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-64ffda"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-semibold"]},{"name":"line-height","label":"Line height","isPrimary":true,"classes":["sw-line-height-tight"]}],"value":"Secciones"},"links":{"type":"array","item_type":"#/elements/definitions/link","items":[{"tag":"a","type":"link","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-616161"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-padding-left-none","sw-padding-top-7xs","sw-padding-bottom-7xs","hover:sw-text-decoration-no-underline"]}],"value":"Hola!","action":{"type":"navigate","options":{"url":{"destination":"/#hero1","target":""},"modalOptions":{"modalSize":"md"}},"action":"Scroll to section > Home/#hero1"}},{"tag":"a","type":"link","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-616161"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-padding-left-none","sw-padding-top-7xs","sw-padding-bottom-7xs","hover:sw-text-decoration-no-underline"]}],"value":"Conóceme","action":{"type":"navigate","options":{"url":{"destination":"/#cta1","target":""},"modalOptions":{"modalSize":"md"}},"action":"Scroll to section > Home/#cta1"}},{"tag":"a","type":"link","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-616161"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-padding-left-none","sw-padding-top-7xs","sw-padding-bottom-7xs","hover:sw-text-decoration-no-underline"]}],"value":"Mis proyectos","action":{"type":"navigate","options":{"url":{"destination":"/#feature-grid2","target":""},"modalOptions":{"modalSize":"md"}},"action":"Scroll to section > Home/#feature-grid2"}}]}},{"title":{"tag":"h6","type":"text","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-64ffda"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-semibold"]},{"name":"line-height","label":"Line height","isPrimary":true,"classes":["sw-line-height-tight"]}],"value":"Mis proyectos"},"links":{"type":"array","item_type":"#/elements/definitions/link","items":[{"tag":"a","type":"link","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-616161"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-padding-left-none","sw-padding-top-7xs","sw-padding-bottom-7xs","hover:sw-text-decoration-no-underline"]}],"value":"Mundo de textos","action":{"type":"navigate","options":{"url":{"destination":"https://mundodetextos.softr.app/","target":"_blank"},"modalOptions":{"modalSize":"md"}},"action":"Open external url > https://mundodetextos.softr.app/"}},{"tag":"a","type":"link","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-616161"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-padding-left-none","sw-padding-top-7xs","sw-padding-bottom-7xs","hover:sw-text-decoration-no-underline"]}],"value":"Sidechill","action":{"type":"navigate","options":{"url":{"destination":"https://sidechill.softr.app/","target":"_blank"},"modalOptions":{"modalSize":"md"}},"action":"Open external url > https://sidechill.softr.app/"}},{"tag":"a","type":"link","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-616161"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-padding-left-none","sw-padding-top-7xs","sw-padding-bottom-7xs","hover:sw-text-decoration-no-underline"]}],"value":"plataforma de colegio","action":{"type":"navigate","options":{"url":{"destination":"https://colegio-plataforma.softr.app/","target":"_blank"},"modalOptions":{"modalSize":"md"}},"action":"Open external url > https://colegio-plataforma.softr.app/"}}]}},{"title":{"tag":"h6","type":"text","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-64ffda"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-semibold"]},{"name":"line-height","label":"Line height","isPrimary":true,"classes":["sw-line-height-tight"]}],"value":"Contactame"},"links":{"type":"array","item_type":"#/elements/definitions/link","items":[{"tag":"a","type":"link","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-616161"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]},{"name":"letter-spacing","label":"Letter spacing","isPrimary":true,"classes":["sw-letter-spacing-normal"]}],"otherStyles":[{"name":"others","label":"Others","isPrimary":true,"classes":["sw-padding-left-none","sw-padding-top-7xs","sw-padding-bottom-7xs","hover:sw-text-decoration-no-underline"]}],"value":"Mensaje","action":{"type":"navigate","options":{"url":{"destination":"/#form1","target":""},"modalOptions":{"modalSize":"md"}},"action":"Scroll to section > Home/#form1"}}]}}]},"socialLinks":{"type":"array","item_type":"#/elements/definitions/socialLink","items":[]},"madeIn":{"tag":"small","type":"text","primaryStyles":[{"name":"size-color","label":"Text Size/Color","isPrimary":true,"classes":["sw-font-size-xs","sw-text-color-64ffda"]},{"name":"font-family","label":"Font family","isPrimary":true,"classes":["sw-font-family-default"]},{"name":"font-weight","label":"Font weight","isPrimary":true,"classes":["sw-font-weight-normal"]}],"otherStyles":[{"name":"others","label":"Others","classes":[]}],"value":"Creado con <i class=\"fas fa-fw fa-heart\"></i> en Colombia."},"termsAndPolicies":{"type":"array","minItems":0,"maxItems":4,"item_type":"#/elements/definitions/link","items":[]},"modalSizeOptions":[{"className":"sw-letter-s","key":"sm"},{"className":"sw-letter-m","key":"md"},{"className":"sw-letter-l","key":"lg"},{"className":"sw-letter-xl","key":"xl"}]},"type":"static","collection":null,"enabled":"true","order":"null","created_at":"2023-11-16T00:29:29.527","updated":[],"permissions":{"EDIT":{"predefinedUserGroupType":null,"customUserGroupIds":[],"enabledPredefinedUserGroupTypes":["ALL_USERS","LOGGED_IN_USERS","NON_LOGGED_IN_USERS"]},"VIEW":{"predefinedUserGroupType":"ALL_USERS","customUserGroupIds":[],"enabledPredefinedUserGroupTypes":["ALL_USERS","LOGGED_IN_USERS","NON_LOGGED_IN_USERS"]}}};block_021fe34b800a409c9821587991fd3a03_defJson['defaultTheme'] = reactDefaultThemes;block_021fe34b800a409c9821587991fd3a03_defJson['settings'] = {};block_021fe34b800a409c9821587991fd3a03.promise.then((block) => {block.render(document.getElementsByClassName('block-021fe34b-800a-409c-9821-587991fd3a03')[0], block_021fe34b800a409c9821587991fd3a03_defJson).catch((error) => {console.error(error);});});
+</script>
+
+<!-- Page Custom Footer Code -->
+
+<!-- End Page Custom Footer Code -->
+
+<!-- App Custom Footer Code -->
+
+<!-- End App Custom Footer Code -->
+
+<script src="https://assets.softr-files.com/libs/iframe-resizer/4.2.11/iframeResizer.contentWindow.min.js" crossorigin="anonymous"></script>
+
+<!-- Localhost -->
+<script type="text/javascript">
+    if (window.location.hostname === 'localhost') {
+        if (getUrlParam('domain')) {
+            setCookie('serverName', getUrlParam('domain'), 30);
+        }
+    }
+
+    function setCookie(name, value, days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + date.toUTCString();
+        document.cookie = name + "=" + value + ";" + expires + ";path=/;" + "SameSite=None; Secure";
+    }
+
+    function getUrlParam(name) {
+        const url = new URL(window.location.href);
+        let param;
+        for (var key of url.searchParams.keys()) {
+            if (key.toLowerCase() === name.toLowerCase()) {
+                param = url.searchParams.get(name);
+                break;
+            }
+        }
+        return param;
+    }
+</script>
+
+<!-- Modal HTML -->
+<div id="sw-modal" class="sw-modal" aria-hidden="true">
+    <div class="sw-modal-overlay" data-micromodal-close>
+        <div tabindex="-1" class="sw-modal-container">
+            <div role="dialog" aria-modal="true" aria-labelledby="micromodal-title">
+                <button aria-label="Close modal" class="sw-modal-close" onclick="MicroModal.close('sw-modal')"></button>
+                <div id="sw-modal-content">
+                    <iframe class="sw-modal-iframe"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--move fixed header under template bar if needed-->
+
+<!--Scroll to section-->
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+        $('a').each(function (index, el) {
+            let href = $(el).attr('href');
+            let path = cleanSlugFromPath(location.pathname);
+            if (href && href.startsWith(path + '#')) {
+                const scrollTo = href.split('#')[1];
+                $(this).attr('href', '#' + scrollTo);
+            }
+        });
+
+        function cleanSlugFromPath(pagePath) {
+            if (pagePath.includes("/r/rec")) {
+                pagePath = pagePath.substring(0, pagePath.indexOf("/r/rec"));
+                pagePath = pagePath.substring(0, pagePath.lastIndexOf("/"));
+            }
+
+            return pagePath + (pagePath.endsWith('/') ? '' : '/');
+        }
+    });
+
+</script>
+
+</body>
+
+</html>
